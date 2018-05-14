@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gbk">
+    <meta name="applicable-device" content="mobile">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《云裳羽衣》是一款多世界穿越的3D古风换装手游。游戏提供丰富换装玩法，自定义捏脸体型，高级定制服装，命运之子养成，多主题搭衣评选及竞技场等等。美术风格上，采用最先进的层染技术，实现光影、动作、特效完美结合，带来顶级的换装体验！ " >
+    <meta name="Keywords" content="云裳羽衣,命运之子,西山居,架空,穿越,玄幻,古装,换装游戏,手游,换装小游戏,古代换装,云裳羽衣官网,云裳羽衣手游,云裳羽衣手游预约,云裳羽衣手游预约活动,云裳羽衣公测,云裳羽衣手游下载,云裳羽衣吧,云裳羽衣官网,云裳羽衣不删档" >
+    <meta itemprop="name" content="腾讯《云裳羽衣》手游官方网站" />
+    <meta itemprop="description" content="《云裳羽衣》是一款多世界穿越的3D古风换装手游。游戏提供丰富换装玩法，自定义捏脸体型，高级定制服装，命运之子养成，多主题搭衣评选及竞技场等等。美术风格上，采用最先进的层染技术，实现光影、动作、特效完美结合，带来顶级的换装体验！" />
+    <meta itemprop="image" content="//game.gtimg.cn/images/ysyy/logo.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+    <title>云裳羽衣官方正版手游，唯美预约心动开启~</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <!-- 设计：微聚CP  |  重构：微聚CP  |  创建：2017-12-27 -->
+    <script>
+        (function (win,doc){
+            if (!win.addEventListener) return;
+            var html=document.documentElement;
+            function setFont()
+            {
+                var cliWidth=html.clientWidth;
+                html.style.fontSize=100*(cliWidth/750)+'px';
+            }
+            win.addEventListener('resize',setFont,false)
+            setFont();
+        })(window,document);
+
+    </script>
+    <style>
+        /* reset */
+        body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+        body{font-family:Tahoma,Arial,"Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",sans-serif;-webkit-text-size-adjust:none;font-size:0.24rem;background: #fff;}
+        input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+        *{outline: none;}
+        header,nav,section,article,footer,figure,figcaption{display:block;}
+        h1,h2,h3,h4,h5,h6{font-size:100%}
+        ol,ul{margin:0;padding:0;}
+        fieldset{border:none;margin:0;padding:0;}
+        table{border-collapse:collapse;border-spacing:0;}
+        a{text-decoration:none;}
+        .wrap a:hover{text-decoration: none;}
+        .fl{float: left;}
+        .fr{float: right;}
+        .clear:after{ content: ''; display: block;  clear: both;  }
+        i,em{font-style: normal;}
+        /*top*/
+        body.lock{
+            position: fixed;
+            width: 100%;
+        }
+        .top{width: 7.50rem;height: 1.20rem;background-color: #202645;z-index: 900;top:0;}
+        .logo{width: 3.24rem;height: 1.20rem;margin-left: .2rem;}
+        .logo a{display:inline-block; width:1.22rem;height:1.22rem;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/logo.png) no-repeat center;background-size: 0.84rem 0.84rem;}
+        .logo h1,.fl p{position: absolute;color: #fff;}
+        .logo h1{left: 1.42rem;top:.26rem;font-size: .3rem;}
+        .logo p{left: 1.42rem;top:.68rem;font-size: .25rem;color: #b7b8c3;}
+        .top .btn{display: block; width: 2.56rem;height: .72rem;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/spr.png) no-repeat -3.88rem -2.27rem/9.26rem 8.19rem;margin: .3rem .3rem;font-size: .31rem;color: #5b4311;text-align: center;line-height: .72rem;font-weight: bold;}
+        .spr{background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/spr.png) no-repeat -3.88rem -2.25rem/9.26rem 8.19rem;}
+        /*kv*/
+        .kv{background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/kv.jpg) no-repeat 50% 0/7.5rem 9.76rem; width: 100%;height: 9.76rem;}
+        #play{position: absolute;width: .47rem;height: .47rem;top:3.2rem;left: 3.2rem;}
+        #play span{display: block;width: .47rem;height: .47rem;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/video_Btn1.png) no-repeat 50% 0/.47rem .47rem;  animation: rotation 2s linear infinite;}
+        @keyframes rotation {
+            0%{
+                transform: rotate(0deg)
+            }
+            100%{
+                transform: rotate(360deg)
+            }
+        }
+        #play i{position: absolute;width: .17rem;height: .2rem;top:50%;left: 50%;margin-top: -.1rem;margin-left: -.07rem;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/video_Btn2.png) no-repeat 50% 0/.17rem .2rem;}
+        .kv h2{display: block;width: 100%;height: 4.26rem;padding-top: 1.57rem;text-align: center;text-indent: -9999rem;}
+        .kv p:first-of-type{font-size: .24rem;color: #7a570d;text-align: center;margin-top: .4rem;}
+        .reward{width: 100%;height: .62rem;text-align: center;margin:.2rem auto;}
+        .reward li{display: inline-block;font-size: .21rem;color: #916f34;line-height: .62rem;}
+        .reward span{display: block;margin-top: .2rem;font-weight: bold;}
+        .reward li:nth-child(1){width: 1.84rem;height:.62rem;background-position:-4.47rem -1.07rem;}
+        .reward li:nth-child(2){width: 2.17rem;height:.62rem;background-position:-.1rem -6.49rem;margin: 0 .4rem;text-indent: 2.5em;}
+        .reward li:nth-child(3){width: 2.09rem;height:.62rem;background-position:-2.47rem -6.49rem;text-indent: 2.5em;}
+        .kv .l-yuyue{display: block;width: 3.03rem; height: 1.14rem;background-position:  -.1rem -3.49rem;text-indent: -9999rem;margin:.02rem auto;}
+        .kv .yuyue{font-size: .28rem;color: #926a15;text-align: center;margin-top: .2rem;}
+        .kv .login-bar{display: block;width: 3rem;height: auto;text-align: center;margin: 0 auto;font-size: .28rem;color: #926a15;}
+        .kv .login-bar a{color: #926a15;}
+        /*sec1*/
+        .sec1{background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/sec1.jpg) no-repeat 50% 0/7.5rem 9.56rem;width:100%;height: 9.55rem;padding-top: 1px;}
+        .sec1 h3{display: block;margin:.9rem auto;width: 5.16rem;height: 1.63rem;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/sec1_title.png) no-repeat 50% 0/5.16rem 1.63rem;text-indent: -9999rem;}
+        .progress{width:6.44rem;height:.71rem;margin: 0 auto;background-position:-.1rem -.16rem;position: relative;z-index: 100;}
+        .schedule{width: 6.44rem;margin: -.25rem auto;position: relative;z-index: 99;}
+        .schedule li{display: inline-block;width: .4rem;height:1rem;background-position: -6.74rem -2.78rem;padding: 0.62rem 0.06rem 0;text-align: center;padding-top: .62rem;margin-right: 1.36rem;font-size: .25rem;color: #836f35;}
+        .schedule li:last-child{margin-right: 0;}
+        .schedule li.on{background-position: -7.43rem -2.78rem;}
+        /*50w*/
+        .same{width: 6.44rem;margin: .85rem auto;}
+        .same li{display: inline-block;width:1.5rem;height:1.32rem;background-position:-6.59rem -.1rem;vertical-align: top;text-align: center;font-size: .25rem;color: #836f35;}
+        .same li:nth-child(2){margin: 0 .85rem;}
+        .same li img{width: 1.28rem;height: 1.32rem;margin: 0 0 .2rem .1rem;}
+        .sec1 .num{font-size: .25rem;color: #004192;text-align: center;font-weight: bold;margin-top: 1rem;}
+        .sec1 .none{display: none;}
+        /*sec2*/
+        .sec2{background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/sec2.jpg) no-repeat 50% 0/7.5rem 15.64rem;width:100%;height: 15.63rem;padding-top: 1px;}
+        .sec2 h3{display: block;width:4.17rem;height:.98rem;background-position:-.1rem -1.07rem;margin: .5rem auto 0;text-indent: -9999rem;padding-top: 1px;}
+        .sec2 h3 em{display: block;width:3.2rem;height:.34rem;background-position:-2.85rem -5.69rem;margin:.3rem auto;}
+        .sec2>p{font-size: .24rem;color: #ffffff;text-align: center;margin-top: .2rem;}
+        .spooler{width: 6.81rem;height: 5.9rem;margin:.1rem auto 0;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/spooler.png) no-repeat 50% 0/6.81rem 5.86rem;padding-top: 1px;}
+        .spooler ul li{width: 1.01rem;height: .96rem;background-position:-6.74rem -1.62rem;text-align: center;padding-top: 1px;display: inline-block;margin: .6rem .2rem .2rem .2rem;}
+        .spooler ul span{display: block; width: .32rem;height: .3rem;background-position:-8.26rem -2.26rem;margin: .3rem auto;}
+        .list_wrap{width:6rem;height:4.24rem;margin: .85rem auto;text-align: center;}
+        .list_wrap p{font-size:.24rem;color: #86797b;}
+        .sec2 .yqhy{display: block;margin: 0 auto;width:2.86rem;height:.69rem;background-position:-3.33rem -3.49rem;text-indent: -9999rem;}
+        .sec2 .spoil{width:6.68rem;height: auto;margin: .5rem auto;}
+        .spoil li{display: inline-block;text-align: center;}
+        .spoil li:nth-child(1){margin-right: .45rem;}
+        .spoil li:nth-child(3){margin:.3rem 0 0 1.8rem;}
+        .spoil li p{font-size: .24rem;color:#e1f3ff;margin: .1rem auto;}
+        .spoil li em{display: block;width:1.05rem;height:.27rem;background-position:-.1rem -7.82rem;margin: .16rem auto;margin-left:.9rem}
+        .spoil li a{display: block;width:2.55rem;height:.6rem;background-position:-.1rem -5.69rem;text-indent: -9999rem;margin: 0 auto;padding-top: 1px;}
+        .spoil li.on a{background-position:-3.52rem -4.83rem;}
+        .spoil li.on em{background-position:-8.22rem -1.75rem;}
+        .gift-show p{display: none;}
+        .gift-show img{width: 3.07rem;height: 1.73rem;}
+        /*sec3*/
+        .sec3{background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/sec3.jpg) no-repeat 50% 0/7.5rem 11.35rem;width:100%;height: 11.34rem;padding-top: 1px;}
+        .sec3 h3{display: block;width:4.17rem;height:.98rem;background-position:-.1rem -1.07rem;margin: .5rem auto 0;text-indent: -9999rem;padding-top: 1px;}
+        .sec3 h3 em{display: block;width:3.2rem;height:.34rem;background-position:-4.76rem -6.49rem;margin:.3rem auto;}
+        .panel{width: 6.3rem;height: 6.3rem;margin: .2rem auto;position: relative;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/turntable1.png) no-repeat 50% 0/5.98rem 5.92rem;}
+        .panelimg{width: 2.01rem;height: 2.05rem;display: none;}
+        .ltpanel_container{left: 2.1rem;top: 2rem;}
+        .ltpanel_hover{background-size: 2.01rem 2.05rem;}
+        .ltpanel_start,.ltpanel_disable{transition:none;transform:scale(1) !important;width: .67rem;height: .71rem;}
+        .lottery_start:hover{transform: scale(1) !important;}
+        .sec3 p{width: 5.52rem;display: block;text-align: center;margin: .3rem auto;font-size: .22rem;color:#235599;}
+        .sec3 span{display: block;margin: .2rem auto;font-size: .26rem;color: #235599;text-align: center;}
+        .more{text-align: center;margin-top: .5rem;}
+        .more a{display: inline-block;width:3.22rem;height:.66rem;background-position:-.1rem -4.83rem;}
+        .more em{display: block;width:2.28rem;height:.3rem;background-position:-3.06rem -7.31rem;text-indent: -9999rem;margin: .18rem auto;}
+        .more a:nth-child(2) em{background-position: -5.54rem -7.31rem;}
+        /*sec4*/
+        .sec4{background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/sec4.jpg) no-repeat 50% 0/7.5rem 11.89rem;width:100%;height: 11.88rem;padding-top: 1px;}
+        .sec4 h3{display: block;width:3.58rem;height:1.04rem;background-position:-.1rem -2.25rem;margin: .8rem auto 0;text-indent: -9999rem;padding-top: 1px;}
+        .sec4 h3 em{display: block;width:2.76rem;height:.31rem;background-position:-.1rem -7.31rem;margin:.35rem auto;}
+        .move{width: 5.13rem;height: 6.91rem;margin: 1.2rem auto;position: relative;}
+        .swiper-slide img{border: 1px solid #f9b244;margin:.05rem .07rem;width: 4.08rem;height: 6.79rem;}
+        .swiper-slide{width: 4.22rem;height: 6.91rem;border: 1px solid #f9b244;}
+        .swiper-pagination{position: absolute;width: 100%;height: .15rem;text-align: center;top: 7.5rem;}
+        .swiper-pagination-bullet{display: inline-block;width:.15rem;height:.15rem;border-radius: 50%;background-color: #4c8cc1;margin: 0 .06rem;}
+        .swiper-pagination-bullet-active{display: inline-block;width:.32rem;height:.15rem;border-radius: .8rem;background-color: #16568a;}
+        .swiper-button-prev{width: .4rem;height: .76rem;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/prev.png) no-repeat 50% 0/.4rem .76rem;left: -.8rem;top:3.1rem;}
+        .swiper-button-next{width: .4rem;height: .76rem;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/next.png) no-repeat 50% 0/.4rem .76rem;right: -.8rem;top:3.1rem;}
+        /*sec5*/
+        .sec5{background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/sec5.jpg) no-repeat 50% 0/7.5rem 9.89rem;width:100%;height: 9.88rem;padding-top: 1px;}
+        .sec5 h3{display: block;width:3.58rem;height:1.04rem;background-position:-.1rem -2.25rem;margin: .8rem auto 0;text-indent: -9999rem;padding-top: 1px;}
+        .sec5 h3 em{display: block;width:1.14rem;height:.31rem;background-position:-6.25rem -5.69rem;margin:.35rem auto;}
+        .rules{width:6.16rem;height:6.36rem;margin:.77rem auto;}
+        .rules li{list-style:inside decimal;font-size: .24rem;color: #d0e8ff;margin-bottom: .3rem;}
+        /*底部*/
+        .ft{display: none; width: 100%;height: 1.2rem;background:rgba(0,0,0,0.5);position: fixed;bottom: 0;z-index: 1001;padding-top: 1px;}
+        .ft .btn{display: block; width: 2.56rem;height: .72rem;margin: .3rem auto;text-indent: -9999rem;background-position:-4.54rem -3.46rem;}
+        /*footer*/
+        #footer_ied{ width: 100%; text-align: center; font-size: 0.2rem; background:#143254; color: #fff; height: 1.1rem;  padding-top: 0.1rem; }
+        .wrap_ied{margin-top:.2rem;}
+        .wrap_ied p:nth-child(1){display: none;}
+        .wrap_ied p a{color: #fff;}
+        /*登录弹窗*/
+        .sprs{background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/sprs.png) no-repeat -3.88rem -2.25rem/7.2rem 4.93rem;}
+        .none{display: none;}
+        .fixe_dimg{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index: 1000;}
+        .win{z-index: 1001; position: fixed; width: 6.32rem;height: 4.02rem;left:0;top:0;right:0;bottom:0;margin:auto;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/borde1.png) no-repeat 50% 0/6.32rem 4.02rem;}
+        .close{position: absolute;width: .65rem;height: .65rem;right:.3rem;top:.3rem;}
+        #fixe_dimg_1 h5{font-size: .32rem;color: #a37c2b;text-align: center;margin-top: .6rem;}
+        #fixe_dimg_1 ul{width:3.16rem;height:1.43rem;margin: .67rem auto;}
+        #fixe_dimg_1 ul li{display:inline-block;text-align: center;}
+        #fixe_dimg_1 li p{font-size: .24rem;color: #a37c2b;margin-top: .2rem;}
+        #fixe_dimg_1 li:nth-child(1){margin-right:1.28rem;}
+        #fixe_dimg_1 li:nth-child(1) a{display:block;width:.8rem;height:.93rem;text-indent: -9999rem;background-position:-.1rem -3.9rem;}
+        #fixe_dimg_1 li:nth-child(2) a{display:block;width:.93rem;height:.78rem;text-indent: -9999rem;background-position:-1.1rem -3.9rem;}
+        /*手机系统*/
+        input{border: none; font-size: .22rem;text-indent:.5em;}
+        .win-1{z-index: 1001; position: fixed; width: 6.31rem;height: 7.06rem;left:0;top:0;right:0;bottom:0;margin:auto;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/border2.png) no-repeat 50% 0/6.31rem 7.06rem;}
+        #fixe_dimg_2 h5{font-size: .32rem;color: #a37c2b;text-align: center;margin-top: .75rem;}
+        #fixe_dimg_2 label:nth-child(3){margin:0 0 0 1rem;}
+        /*.cp-box input{display: none;}*/
+        .cp-box span{display:inline-block; width: 1.87rem;height: .59rem;background-position:-.1rem -3.13rem;text-align: center;line-height: .59rem;font-size: .24rem;color: #916f34;margin: .35rem 0 0;}
+        .cp-box .on{background-position: -5.18rem -1.11rem;}
+        .full{display: block;width: 5.54rem;margin: 0 auto;}
+        .full input{width:5.5rem;height:.64rem;border:.02rem solid #916f34;margin: .3rem auto 0;}
+        .full input.short{width:3.84rem;height:.62rem;border:.02rem solid #916f34;}
+        .full button{width: 1.53rem;height: .66rem; font-size: .22rem;color: #916f34;background-color: #ffe6ae;border: none;}
+        .inv-now{display: block; width:3.4rem;height:.81rem;background-position:-.1rem -.1rem;text-indent: -9999rem;margin: .5rem auto;}
+        /*已经预约*/
+        #fixe_dimg_3 h5{font-size: .48rem;color: #a37c2b;text-align: center;margin-top: 1rem;}
+        #fixe_dimg_3 p{display: block;width:3.25rem;text-align: center;margin: .42rem auto;font-size: .24rem;color: #533905;line-height: 200%;}
+        /*预约成功*/
+        #fixe_dimg_4 h5{font-size: .48rem;color: #a37c2b;text-align: center;margin-top: 1rem;}
+        #fixe_dimg_4 p{display: block;width:4.38rem;text-align: center;margin: .42rem auto;font-size: .24rem;color: #533905;line-height: 200%;}
+        /*获得礼包*/
+        #fixe_dimg_5 h5{font-size: .48rem;color: #a37c2b;text-align: center;margin-top: .8rem;}
+        #fixe_dimg_5 .sam{margin-top: .2rem;}
+        .sam li:nth-child(1){margin-left: .6rem;}
+        .sam li:nth-child(2){margin: 0 .2rem;}
+        /*还没达到邀请人数*/
+        #fixe_dimg_6 h5{font-size: .48rem;color: #a37c2b;text-align: center;margin-top: .8rem;}
+        #fixe_dimg_6 p{display: block;text-align: center;margin: .42rem auto;font-size: .24rem;color: #533905;}
+        .inv-new{display: block; width:3.4rem;height:.81rem;background-position:-.1rem -1.11rem;text-indent: -9999rem;margin: .5rem auto;}
+        /*分享好友*/
+        .win-2{z-index: 1001; position: fixed; width: 6.3rem;height: 2.89rem;left:0;top:0;right:0;bottom:0;margin:auto;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/border3.png) no-repeat 50% 0/6.3rem 2.89rem;}
+        #fixe_dimg_7 p{display: block;width:3.22rem;text-align: center;margin: 1rem auto;font-size: .24rem;color: #533905;line-height: 200%;}
+        /*更多机会*/
+        #fixe_dimg_8 p{display: block;width:3.73rem;text-align: center;margin: 1rem auto 0;font-size: .24rem;color: #533905;line-height: 200%;}
+        .inv-more{display: block; width:3.4rem;height:.81rem;background-position:-.1rem -2.11rem;text-indent: -9999rem;margin: .5rem auto;}
+        /*未抽中*/
+        #fixe_dimg_9 p{display: block;width:3.73rem;text-align: center;margin: 1rem auto 0;font-size: .24rem;color: #533905;line-height: 200%;}
+        /*次数上限*/
+        #fixe_dimg_10 p{display: block;width:3rem;text-align: center;margin: 1rem auto 0;font-size: .24rem;color: #533905;line-height: 200%;}
+        /*获得奖品*/
+        #fixe_dimg_11 h5{font-size: .48rem;color: #a37c2b;text-align: center;margin-top: 1rem;}
+        #fixe_dimg_11 p{display: block;width:4.3rem;text-align: center;margin: .42rem auto;font-size: .24rem;color: #533905;line-height: 200%;}
+        /*填写中奖信息*/
+        #fixe_dimg_12 h5{font-size: .48rem;color: #a37c2b;text-align: center;margin-top: 1rem;}
+        #fixe_dimg_12 p{display: block;width:4.3rem;text-align: center;margin: .2rem auto;font-size: .24rem;color: #533905;line-height: 200%;}
+        .inv-write{display: block; width:3.4rem;height:.81rem;background-position:-3.7rem -.1rem;text-indent: -9999rem;margin: .4rem auto;}
+        /*填写信息*/
+        .win-3{z-index: 1001; position: fixed; width: 6.34rem;height: 8.85rem;left:0;top:0;right:0;bottom:0;margin:auto;background: url(//game.gtimg.cn/images/ysyy/cp/a20171225yym/border4.png) no-repeat 50% 0/6.34rem 8.85rem;}
+        #fixe_dimg_13 h5{font-size: .48rem;color: #a37c2b;text-align: center;margin-top: .5rem;}
+        .ipif{display: block; width: 5.55rem;height:.68rem; margin: .25rem auto;}
+        #fixe_dimg_13 label:nth-child(4){height:2.36rem;}
+        .ipif span{display: inline-block;width: 1.2rem;height:.3rem;text-align: right;line-height: .64rem;font-size: .24rem;color: #543a04;}
+        .ipif input{width:4.13rem;height:.64rem;border:.02rem solid #916f34;}
+        .ipif textarea{width: 4.13rem;height: 2.36rem;border:.02rem solid #916f34;}
+        #fixe_dimg_13 h6{width: 5.55rem;font-size: .24rem;font-weight: bold;color: #a37c2b;margin: 0 auto;}
+        #fixe_dimg_13 p{width: 5.55rem;font-size:.24rem;color: #543a04;margin: .25rem auto;}
+        .inv-tij{display: block; width:3.4rem;height:.81rem;background-position:-3.7rem -2.46rem;text-indent: -9999rem;margin:.4rem 0 .2rem 2rem;;}
+        /*pop_video（视频播放）*/
+        .pop_video{z-index: 1001; position: fixed; width: 6rem;height: 5rem;left:0;top:0;right:0;bottom:0;margin:auto;}
+        #videoCon{height: 5rem;width:100%;}
+        #fixe_dimg_14 p{width: 3rem;font-size:.24rem;color: #543a04;margin: 1rem auto;text-align: center;line-height: 200%;}
+        #J_video .close{font-size: .6rem;color: #fff;top: -.6rem;right:-.3rem;text-align: center;line-height:.65rem;}
+        /*没有预约*/
+        #fixe_dimg_15 p{width: 4.5rem;font-size:.38rem;color: #543a04;margin:.5rem auto 0;text-align: center;line-height: 200%;}
+        #fixe_dimg_15 .inv-now{margin-top: .2rem;}
+        /*没有中奖*/
+        #fixe_dimg_16 p{width: 4.5rem;font-size:.38rem;color: #543a04;margin:1rem auto 0;text-align: center;line-height: 200%;}
+        /*抽奖次数全部用完*/
+        #fixe_dimg_17 p{width: 4.5rem;font-size:.38rem;color: #543a04;margin:1rem auto 0;text-align: center;line-height: 200%;}
+    </style>
+</head>
+<body>
+<div class="top clear">
+    <div class="fl logo">
+        <a href="javascript:;"  ontouchend="PTTSendClick('link','yuns','云裳羽衣');"></a>
+        <h1>云裳羽衣</h1>
+        <p>可捏脸的3D换装手游</p>
+    </div>
+    <a class="btn fr" href="javascript:;" ontouchend="PTTSendClick('link','guanw','进入官网');">进入官网</a>
+</div>
+<!--kv-->
+<div class="kv">
+    <h2>千颜古韵，万变华裳</h2>
+    <a href="javascript:playVideo('d05657hv71b')" id="play" ontouchend="PTTSendClick('video','sp','视频');"><span></span><i></i></a>
+    <p class=yuyue>\ &nbsp; 预约可获价值999元礼包 &nbsp; \</p>
+    <ul class="reward">
+        <li class="spr">专属预约套装X1</li>
+        <li class="spr">金币×1888</li>
+        <li class="spr">金币×1888</li>
+    </ul>
+    <p class="login-bar">您好，请 <a href="javascript:;">【登录】</a></p>
+    <a class="spr l-yuyue" href="javascript:;" ontouchend="PTTSendClick('btn','lijiyuyue','立即预约');">立即预约</a>
+    <p class="yuyue">已有<em>xxxx</em>名大人预约</p>
+</div>
+<!--sec1-->
+<div class="sec1">
+    <h3>全民预约 / 壕礼不断</h3>
+    <div class="progress spr"></div>
+    <ul class="schedule" id="schedule">
+        <li class="spr on">50万</li>
+        <li class="spr">100万</li>
+        <li class="spr">300万</li>
+        <li class="spr">500万</li>
+    </ul>
+    <!--50w-->
+    <ul class=" same">
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_1.png" width=128 height=132 alt="">
+            残卷X10
+        </li>
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_2.png" width=128 height=132 alt="">
+            金币×5000
+        </li>
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_3.png" width=128 height=132 alt="">
+            茜红X10
+        </li>
+    </ul>
+    <!--100w-->
+    <ul class="none same">
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_11.png" width=128 height=132  alt="">
+            金币X5000
+        </li>
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_22.png" width=128 height=132 alt="">
+            流霞X10
+        </li>
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_33.png" width=128 height=132 alt="">
+            书卷X2
+        </li>
+    </ul>
+    <!--300w-->
+    <ul class="none same">
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_111.png" width=128 height=132 alt="">
+            金币X10000
+        </li>
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_222.png" width=128 height=132 alt="">
+            评选币X30
+        </li>
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_333.png" width=128 height=132 alt="">
+            星沙X10
+        </li>
+    </ul>
+    <!--500w-->
+    <ul class="none same">
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_1111.png" width=128 height=132 alt="">
+            金币X10000
+        </li>
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_2222.png" width=128 height=132 alt="">
+            竞技币X30
+        </li>
+        <li class="spr">
+            <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_3333.png" width=128 height=132 alt="">
+            祈玉X100
+        </li>
+    </ul>
+    <p class=num>&frasl;&nbsp;预约人数达到<em id='number'>50万</em>，所有官网预约的玩家可获得&nbsp;&frasl;</p>
+</div>
+<!--sec2-->
+<div class="sec2">
+    <h3 class="spr"><em class="spr">邀请好友 / 得多重礼包</em></h3>
+    <p>已集结<em>XX</em>名好友</p>
+    <div class="spooler">
+            <ul class="list_wrap">
+                <li class="spr">
+                    <span class="spr"></span>
+                    <p>xxx</p>
+                </li>
+                <li class="spr">
+                    <span class="spr"></span>
+                    <p>xxx</p>
+                </li>
+                <li class="spr">
+                    <span class="spr"></span>
+                    <p>xxx</p>
+                </li>
+                <li class="spr">
+                    <span class="spr"></span>
+                    <p>xxx</p>
+                </li>
+                <li class="spr">
+                    <span class="spr"></span>
+                    <p>xxx</p>
+                </li>
+                <li class="spr">
+                    <span class="spr"></span>
+                    <p>xxx</p>
+                </li>
+                <li class="spr">
+                    <span class="spr"></span>
+                    <p>xxx</p>
+                </li>
+                <li class="spr">
+                    <span class="spr"></span>
+                    <p>xxx</p>
+                </li>
+            </ul>
+    </div>
+    <a href="javascript:;" class="spr yqhy" ontouchend="PTTSendClick('btn','yaoqhaoyou','邀请好友');">邀请好友</a>
+    <ul class="spoil">
+        <li>
+            <div class="gift-show">
+                <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/gift-1.png" width=306 height=173 alt="">
+                <p>祈玉×60</p>
+                <p>书卷×1</p>
+            </div>
+            <p>成功邀请3人解锁</p>
+            <a href="javascript:;" class="spr" ontouchend="PTTSendClick('btn','lijilingqu','立即领取');"> <em class="spr">立即领取</em></a>
+        </li>
+        <li>
+            <div class="gift-show">
+                <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/gift-2.png" width=307 height=173 alt="">
+                <p>祈玉×30</p>
+                <p>体力×30</p>
+            </div>
+            <p>成功邀请5人解锁</p>
+            <a href="javascript:;" class="spr" ontouchend="PTTSendClick('btn','lijilingqu','立即领取');"> <em class="spr">立即领取</em></a>
+        </li>
+        <li class="on">
+            <div class="gift-show">
+                <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/gift-3.png" width=307 height=174 alt="">
+                <p>金币×5000</p>
+                <p>体力×30</p>
+            </div>
+            <p>成功邀请8人解锁</p>
+            <a href="javascript:;" class="spr" ontouchend="PTTSendClick('btn','weijies','未解锁');"> <em class="spr">未解锁</em></a>
+        </li>
+    </ul>
+</div>
+<!--sec3-->
+<div class="sec3">
+    <h3 class="spr"><em class="spr">邀请好友 / 得多重礼包</em></h3>
+    <div id="ltpanel" class="panel">
+        <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/pointer-bg.png" width=201 height=205 alt="" class='panelimg'>
+    </div>
+    <p>成功预约可获得1次抽奖机会，每成功邀请1位好友预约，即可再获得1次抽奖机会，单人账号每日抽奖上限5次</p>
+    <span>您还有<em>5</em>次抽奖机会</span>
+    <div class="more">
+        <a href="javascript:;" class="spr" ontouchend="PTTSendClick('btn','chakanjilu','查看我的抽奖记录');">
+            <em class="spr">查看我的抽奖记录</em>
+        </a>
+        <a href="javascript:;" class="spr" ontouchend="PTTSendClick('btn','choujiangjihui','获得更多抽奖机会');">
+            <em class="spr">获得更多抽奖机会</em>
+        </a>
+    </div>
+</div>
+<!--sec4-->
+<div class="sec4">
+    <h3 class="spr"><em class="spr">游戏特色 / 惊喜玩法</em></h3>
+    <div class="move">
+        <div class="swiper-container swiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/slide1.jpg" width=408 height=679 alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/slide2.jpg" width=408 height=679 alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/slide3.jpg" width=408 height=679 alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/slide4.jpg" width=408 height=679 alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/slide5.jpg" width=408 height=679 alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+<!--sec5-->
+<div class="sec5">
+    <h3 class="spr"><em class="spr">游戏特色 / 惊喜玩法</em></h3>
+    <ol class="rules">
+        <li>活动时间：2017年xx月xx日至不删档测试开启当天0点结束。</li>
+        <li>活动期间，玩家完成预约即可获得1次抽奖机会。</li>
+        <li>预约活动结束后，所有预约玩家在不删档测试时均可获得已解锁的里程碑奖励。<br>注：各个里程碑的礼包仅能获得一次。届时请注意游戏内发放通知。</li>
+        <li>每成功邀请一位好友即可额外获得一次抽奖机会，单个帐号每日仅限抽5次，活动期间抽奖总次数限30次。</li>
+        <li>每成功邀请一位好友即可额外获得一次抽奖机会，单个帐号每日仅限抽5次，活动期间抽奖总次数限30次。</li>
+        <li>如使用外挂、作弊器以及其他不正当的方式参加本活动的，官方将取消用户参与资格、获奖资格。</li>
+        <li>腾讯保留法律允许范围内对活动进行补充解释的权利。</li>
+    </ol>
+</div>
+<!--底部-->
+<div class="ft">
+    <a href="javascript:;" class="sprs btn" ontouchend="PTTSendClick('btn','lijiyuyue','立即预约');">立即预约</a>
+</div>
+<!--登录弹窗-->
+<div class='fixe_dimg none'></div>
+    <div class="win none" id="fixe_dimg_1">
+        <h5>选择登录方式</h5>
+        <ul>
+            <li>
+                <a href="javascript:;" class="sprs" ontouchend="PTTSendClick('btn','QQdenglu','QQ登录');">QQ登录</a>
+                <p>QQ登录</p>
+            </li>
+            <li>
+                <a href="javascript:;" class="sprs" ontouchend="PTTSendClick('btn','weixdenglu','微信登录');">微信登录</a>
+                <p>微信登录</p>
+            </li>
+        </ul>
+        <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+    </div>
+<!--手机系统-->
+    <div class="win-1 none" id="fixe_dimg_2">
+        <h5>请选择您的手机系统</h5>
+        <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+        <label for="cp1" class="cp-box">
+            <input type="radio" value="android" name="cp" id="cp1" checked="">
+            <span class="ons sprs">Android</span>
+        </label>
+        <label for="cp2" class="cp-box">
+            <input type="radio" value="ios" name="cp" id="cp2">
+            <span class="on sprs">iOS</span>
+        </label>
+        <label for="tel" class="full">
+            <input id="tel" type="text" placeholder="请输入您的手机号">
+        </label>
+        <label for="uni" class="full">
+            <input id="uni" type="text" placeholder="请输入您的验证码" class="short">
+            <button>获取验证码</button>
+        </label>
+        <label for="invcode" class="full">
+            <input id="invcode" type="text" placeholder="好友验证码（非必填项）" class="short">
+        </label>
+        <a href="javascript:;" class="inv-now sprs" ontouchend="PTTSendClick('btn','lijiyuyue','立即预约');">立即预约</a>
+    </div>
+<!--已经预约-->
+    <div class="win none" id="fixe_dimg_3">
+        <h5>您已预约过啦</h5>
+        <p>感谢您预约《云裳羽衣》手游
+            更多福利，请看页面详情！</p>
+        <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+    </div>
+<!--预约成功-->
+    <div class="win none" id="fixe_dimg_4">
+        <h5>恭喜您，预约成功！</h5>
+        <p>感谢您预约《云裳羽衣》手游 <br>
+            您将获得 1 次抽奖机会，记得来抽奖哦！</p>
+        <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+    </div>
+<!--获得礼包-->
+    <div class="win none"  id="fixe_dimg_5">
+        <h5>恭喜您，获得礼包！</h5>
+        <ul class="sam same">
+            <li class="spr">
+                <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_11.png" width=128 height=132  alt="">
+                <p>金币X5000</p>
+            </li>
+            <li class="spr">
+                <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_22.png" width=128 height=132 alt="">
+                <p>流霞X10</p>
+            </li>
+            <li class="spr">
+                <img src="//game.gtimg.cn/images/ysyy/cp/a20171225yym/icon_33.png" width=128 height=132 alt="">
+                <p>书卷X2</p>
+            </li>
+        </ul>
+        <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+    </div>
+<!--还没达到邀请人数-->
+    <div class="win none" id="fixe_dimg_6">
+        <h5>啊哦，还没达到邀请人数</h5>
+        <p>邀请更多好人，一起获得丰富礼包吧！</p>
+        <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+        <a href="javascript:;" class="inv-new sprs" ontouchend="PTTSendClick('btn','yaoqhaoyou','邀请好友');">邀请好友</a>
+    </div>
+<!--分享好友-->
+    <div class="win-2 none" id="fixe_dimg_7">
+        <p>请点击右上角，分享给好友 ！
+            为《云裳羽衣》手游 助力！</p>
+        <a href="javascript:;" class="close"  ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+    </div>
+<!--更多机会-->
+    <div class="win none" id="fixe_dimg_8">
+        <p>啊哦、您的抽奖机会已用完 <br>
+            邀请好友，可以获得更多抽奖机会
+            </p>
+        <a href="javascript:;" class="close"  ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+        <a href="javascript:;" class="inv-more sprs" ontouchend="PTTSendClick('btn','more','更多机会');">更多机会</a>
+    </div>
+<!--未抽中-->
+<div class="win-2 none" id="fixe_dimg_9">
+    <p>啊哦、再接再励! <br>
+        再试 1 次吧，说不定有运气！</p>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!--次数上限-->
+<div class="win-2 none" id="fixe_dimg_10">
+    <p>您今天的抽奖次数到达上限
+        明天再来哦！</p>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!--获得奖品-->
+<div class="win none" id="fixe_dimg_11">
+    <h5>恭喜你，中奖啦！</h5>
+    <p>您获得了xxx(道具名），活动结束后将
+        在游戏内发放！</p>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!--填写中奖信息-->
+<div class="win none" id="fixe_dimg_12">
+    <h5>恭喜你，中奖啦！</h5>
+    <p>您获得了xxx，请填写收货信息！</p>
+    <a href="javascript:;" class="inv-write sprs" ontouchend="PTTSendClick('btn','tianxiexinxi','填写信息');">填写信息</a>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!--填写信息-->
+<div class="win-3 none" id="fixe_dimg_13">
+    <h5>填写信息</h5>
+    <label for="name" class="ipif clear">
+        <span class="fl">收件人：</span>
+        <input class="fl" type="text" name="name" id="name">
+    </label>
+    <label for="tel2" class="ipif clear">
+        <span class="fl">联系方式：</span>
+        <input class="fl" type="text" name="tel2" id="tel2">
+    </label>
+    <label for="addr" class="ipif clear">
+        <span class="fl">收件地址：</span>
+        <textarea class="fl" type="text" name="addr" id="addr" rows="5"></textarea>
+    </label>
+    <a href="javascript:;" class="inv-tij sprs" ontouchend="PTTSendClick('btn','tijiao','提交');">提交</a>
+    <h6 class="tl">活动说明：</h6>
+    <p class="tl">实物奖品奖在活动结束后15天内发出，请准确填写收件信息，因为填写错误导致无法发奖，恕不负责。</p>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!--已经领取-->
+<div class="win-2 none" id="fixe_dimg_14">
+    <p>您已经领取过了哦，后续请游戏内查收！</p>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!--没有预约-->
+<div class="win-2 none" id="fixe_dimg_15">
+    <p>啊哦，你还没有预约哦~</p>
+    <a href="javascript:;" class="inv-now sprs" ontouchend="PTTSendClick('btn','lijiyuyue','立即预约');">立即预约</a>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!--没有中奖-->
+<div class="win-2 none" id="fixe_dimg_16">
+    <p>您目前没有任何中奖记录~</p>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!--抽奖次数全部用完-->
+<div class="win-2 none" id="fixe_dimg_17">
+    <p>您的抽奖次数全部用完</p>
+    <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','guanbi','关闭');"></a>
+</div>
+<!-- pop_video（视频播放） -->
+<div class="pop_video none" id="J_video" >
+    <a href="javascript:closeVideo();" class="close" title="关闭" ontouchend="PTTSendClick('btn','guanbi','关闭');">×</a>
+    <div class="video_box" id="videoCon"></div>
+</div>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//game.gtimg.cn/images/clqs/cp/a20171023reserve/pc/js/swiper-3.4.2.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="js/lottery.js"></script>
+<script src="//ossweb-img.qq.com/images/js/foot.js"></script>
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<script>
+
+    var setSite = {//设置网站属性
+        siteType: "a20171225yym", //必填项:官网填写"os"，活动专题填写活动目录名称如："a20160701xxx"，
+        pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "云裳羽衣-万变华裳 倾城古韵", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+    TGMobileShare({
+        shareTitle:'云裳羽衣官方正版手游，唯美预约心动开启~', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'捏脸大触，换装达人！快来预约游戏，IPhoneX、海量Q币等你赢~', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'http://game.gtimg.cn/images/ysyy/cp/a20171225yym/share.png', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:location.href, //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'a20171225yym' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+    !function () {
+        var body_top = 0
+        window.bodyLock = function () {
+            body_top = $(window).scrollTop()
+            $("body").css("top",-body_top)
+            $("body").addClass("lock")
+        }
+        window.bodyUnlock = function () {
+            $("body").removeClass("lock")
+            $("body").css("top","")
+            if(body_top) {
+                $(window).scrollTop(body_top)
+                body_top = 0
+            }
+        }
+    }()
+    //点击开始抽奖 通知js  flash->js
+    function callJsToStarto(){
+        //alert(11);
+        //测试
+        callFlashToRollo(4);
+    }
+    //开发获得抽奖结果 通知flash开始播放效果 js->flash
+    function callFlashToRollo(id){
+        //alert(22)
+        //通知转盘转到对应的中奖产品的id （序号从0,1,2.....，0是指针初始指示的位置，沿着顺时针的方向递增）
+        if(SWFOBJo)SWFOBJo.stopRoll(id);
+    }
+    //3、flash动画完成通知js  flash->js
+    function callJsToCompleteo(){
+        SWFOBJo.enable()
+         alert('恭喜你获得大奖XXXX哟！！');
+    }
+    //初始化抽奖对象的SWFOBJ
+    //转盘的中心点坐标为（0,0））
+    var SWFOBJo= new Lottery({
+        'r':8,//奖品总数
+        'width':'201',//flash宽度
+        'height':'205',//flash高度
+        'flashFirst':false,
+        's':'//game.gtimg.cn/images/ysyy/cp/a20171225yym/pointer-num.png',//开始抽奖按钮图片
+        'bx':0,//圆盘的图片位置x坐标 （转盘的中心点坐标为（0,0））
+        'by':0,//圆盘的图片位置y坐标
+        'sx':0,//开始抽奖按钮x坐标
+        'sy':0,//开始抽奖按钮y坐标
+        'contentId' : 'ltpanel',//嵌入swf 的div层的 id
+        'onClickRollEvent' : callJsToStarto,//对应上面接口
+        'onCompleteRollEvent':callJsToCompleteo //对应上面接口
+    });
+    // 轮播1
+    var swiper1 = new Swiper('.swiper-1', {
+        loop : true,
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        effect: 'coverflow',
+        paginationClickable: true,
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        autoplay : 3000,
+        autoplayDisableOnInteraction : false,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        coverflow: {
+            rotate: 0,// 旋转的角度
+            stretch: -20,// 拉伸   图片间左右的间距和密集度
+            depth: 200,// 深度   切换图片间上下的间距和密集度
+            modifier: 2,// 修正值 该值越大前面的效果越明显
+            //slideShadows : false// 页面阴影效果
+        }
+    });
+
+    $('#schedule li').on("touchstart",function () {
+        index = $(this).index();
+        var tt = $('#schedule li').eq(index).text();
+        $('#number').html(tt);
+        $('#schedule li').eq(index).addClass("on").siblings().removeClass("on")
+        $('.same').eq(index).show().siblings(".same").hide();
+    })
+//    弹窗
+    var none=document.querySelectorAll('.none')
+    var close=document.querySelectorAll('.close')
+    var fixe_dimg=document.querySelectorAll(".fixe_dimg")
+    function showDia(id){
+        if(id=='fixe_dimg_13'||id=='fixe_dimg_2'){
+            bodyLock()
+        }
+        for(var i=0;i<none.length;i++){
+            none[i].style.display='none';
+            none[i].addEventListener('touchend',function(e){
+                e.stopPropagation()
+                return false;
+            },false)
+        }
+        document.getElementById(id).style.display='block'
+        fixe_dimg[0].style.display='block'
+    }
+    function showDiahide(){
+        bodyUnlock()
+        for(var i=0;i<none.length;i++){
+            none[i].style.display='none';
+            none[i].addEventListener('touchend',function(e){
+                e.stopPropagation()
+                return false;
+            },false)
+        }
+    }
+    for(var i=0;i<close.length;i++){
+        close[i].addEventListener('touchend',function(){
+            showDiahide()
+            player.destroy();
+        },false)
+    }
+    //视频播放
+    var player;
+    function playVideo(vid) {
+        $('#J_video').show();
+        $('#videoCon').css('height',"5rem")
+        fixe_dimg[0].style.display='block'
+        player = new Txplayer({
+            containerId: 'videoCon',
+            vid:vid,
+            autoplay: true,
+            width: "100%",
+            height: "100%"
+        });
+    }
+    function closeVideo() {
+        $('#J_video').hide();
+        player.togglePlayPause();
+    }
+    var ft = document.querySelector('.ft')
+    window.onscroll=function(){
+        if(document.body.scrollTop){
+            if(document.body.scrollTop>=576){
+                ft.style.display="block"
+            }else{
+                ft.style.display="none"
+            }
+        }else{
+            if(document.documentElement.scrollTop>=576){
+                ft.style.display="block"
+            }else{
+                ft.style.display="none"
+            }
+        }
+    };
+
+</script>
+</body>
+</html>
