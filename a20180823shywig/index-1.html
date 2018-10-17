@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="Keywords" content="云裳羽衣、云裳羽衣官网、腾讯《云裳羽衣》手游官方网站、云裳羽衣游戏、云裳羽衣手游、霓裳羽衣"/>
+    <meta name="Description" content="微社区趣味问答第二期，持续28天，内容覆盖山海异闻与九天星卷，每日可参加">
+    <meta name="tgtest-ignore" content="foot">
+    <title>云裳羽衣微官网-腾讯游戏</title>
+    <!-- 设计：微聚CP  |  重构：微聚CP  |  创建：2018-08-23 -->
+    <style>
+        html {
+            font-size: calc(100vw / 750 * 100);
+        }
+        @media screen and (orientation: landscape) {
+            html { font-size: calc(100vw / 1334 * 100);}
+        }
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+        details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+        table{border-collapse:collapse;border-spacing:0}
+        audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+        fieldset,img{border:0}
+        address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+        ol,ul{list-style:none}
+        caption,th{text-align:left}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        q:before,q:after{content:''}
+        abbr,acronym{border:0;font-variant:normal}
+        sup{vertical-align:text-top}
+        sub{vertical-align:text-bottom}
+        input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;outline: none;}
+        input,textarea,select{*font-size:100%}
+        a {text-decoration: none;outline: none;}
+        .q:after {content:""; display:block; height:0; clear:both; overflow:hidden;}
+        html{font-family:'\5FAE\8F6F\96C5\9ED1';}
+        button{font-family:'\5FAE\8F6F\96C5\9ED1';}
+        *{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}
+        input,select{border-radius: 0;}
+        select{appearance: none;-webkit-appearance:none;-moz-appearance:none;}
+        .fr{float: right;}
+        .fl{float: left;}
+        /*通用样式*/
+        .day1 .spr{background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/spr.png) no-repeat 50%/7.3rem 5.4rem;}
+        .day2 .spr{background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/spr1.png) no-repeat 50%/7.3rem 5.4rem;}
+        body.day1{width:100%;height: 100%; background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/bg.jpg) no-repeat;background-size: cover;}
+        body.day2{width:100%;height: 100%; background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/bg1.jpg) no-repeat;background-size: cover;}
+        .day1 .section{display: none;min-height: 100vh;}
+        .day2 .section{display: none;min-height: 100vh;}
+        .day1 .section.on{display: block;}
+        .day2 .section.on{display: block;}
+        /*section1*/
+        .day1 .section1,.day1 .section2,.day1 .section3{overflow: hidden;}
+        .day2 .section1,.day2 .section2,.day2 .section3{overflow: hidden;}
+        .day1 .section1 h1 a,.day1 .section2 h1 a,.day1 .section3 h1 a{display: block;width:1.7rem;height:.8rem;background-position:-5.4rem -2.7rem;text-indent: -9999rem;margin:.5rem 0 0 .6rem;}
+        .day2 .section1 h1 a,.day2 .section2 h1 a,.day2 .section3 h1 a{display: block;width:1.7rem;height:.8rem;background-position:-5.4rem -2.7rem;text-indent: -9999rem;margin:.5rem 0 0 .6rem;}
+        .day1 .section1 .slogan{width:3.4rem;height:4.36rem;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/slogan-1.png) no-repeat center/cover;text-indent: -9999rem;margin: .2rem 0 0 1.5rem;position: relative;z-index: 1;}
+        .day2 .section1 .slogan{width:3.4rem;height:4.36rem;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/slogan-11.png) no-repeat center/cover;text-indent: -9999rem;margin: .2rem 0 0 1.5rem;position: relative;z-index: 1;}
+        .day1 .section1 .person{position: absolute;width:3.4rem;height:11.26rem;bottom: 0;right: 0;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/person.png) no-repeat center/cover;text-indent: -9999rem;z-index: 0;}
+        .day2 .section1 .person{position: absolute;width:4.56rem;height:11.26rem;bottom: 0;right: 0;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/person1.png) no-repeat center/cover;text-indent: -9999rem;z-index: 0;}
+        .lead1,.lead2{display: none;}
+        .day1 .section1 .lead1{display: block; font-size: .26rem;color: #c0fced;width: 6.05rem;position: relative;z-index: 1;margin: .8rem auto 0;line-height: 1.8;}
+        .day2 .section1 .lead2{display: block; font-size: .26rem;color: #4e59b4;width: 6.03rem;height: 2.03rem; position: relative;z-index: 1;margin: .8rem auto 0;line-height: 1.8;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/guide.png) no-repeat center/cover;box-sizing: border-box;padding: .1rem .15rem;}
+        .day1 .section1 .lead1 em{color: #2cfdff;}
+        .day2 .section1 .lead2 em{color: #7d75ff;}
+        .day1 .section1 .lead1:after{position: absolute;content:'';background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/spr.png) no-repeat -4.41rem -2.76rem/7.3rem 5.4rem;width:.3rem;height:.2rem;left: -.3rem;top: -.1rem;}
+        .day1 .section1 .lead1:before{position: absolute;content:'';background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/spr.png) no-repeat -4.89rem -2.76rem/7.3rem 5.4rem;width:.3rem;height:.2rem;right: -.1rem;bottom: -.1rem;}
+        .day1 .section1 .start{display:block;text-indent: -9999rem;width:3.45rem;height:1.13rem;background-position:-.1rem -.1rem;margin: .85rem auto 0;position: relative;z-index: 1;}
+        .day2 .section1 .start{display:block;text-indent: -9999rem;width:3.45rem;height:1.13rem;background-position:-.1rem -.1rem;margin: .85rem auto 0;position: relative;z-index: 1;}
+        /*section2*/
+        .day1 .section2 .slogan,.day1 .section3 .slogan{width:4.91rem;height:2.5rem;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/slogan-2.png) no-repeat center/cover;text-indent: -9999rem;margin: .2rem auto 0;position: relative;z-index: 1;}
+        .day2 .section2 .slogan,.day2 .section3 .slogan{width:4.91rem;height:2.5rem;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/slogan-22.png) no-repeat center/cover;text-indent: -9999rem;margin: .2rem auto 0;position: relative;z-index: 1;}
+        .day1 .section2 .keyword{width:3.26rem;height:.78rem;background-position: -.1rem -2.76rem;font-size: .32rem;color: #beffed;margin: .2rem auto 0;box-sizing: border-box;padding:.15rem .55rem;}
+        .day2 .section2 .keyword{width:3.26rem;height:.78rem;background-position: -.1rem -2.76rem;font-size: .32rem;color: #4e59b4;margin: .2rem auto 0;box-sizing: border-box;padding:.15rem .55rem;}
+        .day1 .section2 .keyword em{color: #2cfdff;}
+        .day1 .section2 p{width:5.8rem;font-size:.26rem;color: #beffed;text-align: center;margin:.15rem auto 0;}
+        .day2 .section2 p{width:5.8rem;font-size:.26rem;color: #1e2667;text-align: center;margin:.15rem auto 0;}
+        .day1 .section2 p span{display: inline-block;width:.85rem;height:.38rem;box-sizing: border-box;text-align: center;line-height: .39rem;color: #f0fffa;background-position:-3.36rem -2.76rem;margin-right: .1rem;}
+        .day1 .section2 p strong{text-align: left;width: 4.7rem;}
+        .day2 .section2 p strong{text-align: left;width: 4.7rem;}
+        .day2 .section2 p span{display: inline-block; width:.85rem;height:.38rem;box-sizing: border-box;text-align: center;line-height: .39rem;color: #a1d1f7;background-position:-3.36rem -2.76rem;margin-right: .1rem;}
+        .day1 .section2 .list{font-size:.26rem;color: #32b0bd;display: flex;flex-wrap: nowrap;justify-content: space-between;width:6.6rem;margin: .55rem;transition: opacity 1s}
+        .day2 .section2 .list{font-size:.26rem;color: #648fe8;display: flex;flex-wrap: nowrap;justify-content: space-between;width:6.6rem;margin: .55rem;transition: opacity 1s}
+        .day1 .section2 .list li{position: relative; width:1.97rem;height:3.11rem;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/topic.png) no-repeat center/cover;text-align: center;transition: all .3s;top: 0;}
+        .day2 .section2 .list li{position: relative; width:1.97rem;height:3.11rem;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/topic1.png) no-repeat center/cover;text-align: center;transition: all .3s;top: 0;}
+        .day1 .section2 .list li em{font-style: normal;font-size:.28rem;color:#fff;width:.53rem;height:.53rem;display: block;text-align: center;line-height: .53rem;margin:.28rem auto 0;background-position:-1.81rem -3.65rem;}
+        .day2 .section2 .list li em{font-style: normal;font-size:.28rem;color:#fff;width:.53rem;height:.53rem;display: block;text-align: center;line-height: .53rem;margin:.28rem auto 0;background-position:-1.815rem -3.65rem;}
+        .day1 .section2 .list li .border{width: 1.1rem;height: 1.1rem;border-radius: 50%;border: 1px solid #aceae2;margin: .1rem auto 0;}
+        .day2 .section2 .list li .border{width: 1.1rem;height: 1.1rem;border-radius: 50%;border: 1px solid #bbd1fc;margin: .1rem auto 0;}
+        .day1 .section2 .list li img{display: block;width:1.03rem;height:1.03rem;border-radius: 50%;margin: .04rem auto;}
+        .day2 .section2 .list li img{display: block;width:1.03rem;height:1.03rem;border-radius: 50%;margin: .04rem auto;}
+        .day1 .section2 .list li span{display: block;margin-top: .2rem;}
+        .day2 .section2 .list li span{display: block;margin-top: .2rem;}
+        .day1 .section2 .list li.on{top: -.35rem;}
+        .day2 .section2 .list li.on{top: -.35rem;}
+        .day1 .section2 .verify{display: block;width:3.45rem;height:1.13rem;text-indent: -9999rem;background-position: -3.75rem -.1rem;margin: .45rem auto 0;animation: move .6s linear infinite alternate;}
+        .day2 .section2 .verify{display: block;width:3.45rem;height:1.13rem;text-indent: -9999rem;background-position: -3.75rem -.1rem;margin: .45rem auto 0;animation: move .6s linear infinite alternate;}
+        /*section3*/
+        .day1 .section3 .pop{width:0;height:3.78rem;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/award-bg.png) no-repeat center/cover;margin: .65rem auto 0;position: relative;transition: width .3s;padding-top: 0.01rem;}
+        .day2 .section3 .pop{width:0;height:3.78rem;background: url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/award-bg1.png) no-repeat center/cover;margin: .65rem auto 0;position: relative;transition: width .3s;padding-top: 0.01rem;}
+        .day1 .section3 .pop:after{position: absolute;content: "";width:.15rem;height:4.01rem;background:url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/aft.png) no-repeat center/cover;left: -.15rem;top: -.1rem;}
+        .day2 .section3 .pop:after{position: absolute;content: "";width:.15rem;height:4.01rem;background:url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/aft1.png) no-repeat center/cover;left: -.15rem;top: -.1rem;}
+        .day1 .section3 .pop:before{position: absolute;content: "";width:.15rem;height:4.01rem;background:url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/aft.png) no-repeat center/cover;right: -.15rem;top: -.1rem;}
+        .day2 .section3 .pop:before{position: absolute;content: "";width:.15rem;height:4.01rem;background:url(//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/aft1.png) no-repeat center/cover;right: -.15rem;top: -.1rem;}
+        .day1 .section3 p{width: 4.75rem;text-align: center;font-size:.26rem;color: #32b0bd;line-height:1.6;margin:.5rem auto 0;}
+        .day2 .section3 p{width:5.5rem;text-align: center;font-size:.26rem;color: #648fe8;line-height:1.6;margin:.5rem auto 0;}
+        .day1 .section3 .pop .award{width:1.58rem;height:1.58rem;background-position:-.1rem -3.74rem;margin: .15rem auto 0;overflow: hidden;}
+        .day2 .section3 .pop .award{width:1.58rem;height:1.58rem;background-position:-.1rem -3.74rem;margin: .15rem auto 0;overflow: hidden;}
+        .day1 .section3 .pop .award img{display: block;width:1.27rem;height:.91rem;margin: .32rem auto;}
+        .day2 .section3 .pop .award img{display: block;width:1.27rem;height:.91rem;margin: .32rem auto;}
+        .day1 .section3 .pop span{display: block;font-size:.26rem;color: #32b0bd;text-align: center;margin-top: .05rem;}
+        .day2 .section3 .pop span{display: block;font-size:.26rem;color: #648fe8;text-align: center;margin-top: .05rem;}
+        .day1 .section3 .pop .box{width: 100%;height: 100%;overflow: hidden;}
+        .day2 .section3 .pop .box{width: 100%;height: 100%;overflow: hidden;}
+        .day1 .section3 a.lq{display: block;width: 3.45rem;height: 1.13rem;text-indent: -9999rem;background-position: -.1rem -1.43rem;margin: .58rem auto 0;animation: move .6s linear infinite alternate;}
+        .day2 .section3 a.lq{display: block;width: 3.45rem;height: 1.13rem;text-indent: -9999rem;background-position: -.1rem -1.43rem;margin: .58rem auto 0;animation: move .6s linear infinite alternate;}
+        .day1 .section3 a.lq.on{background-position:-3.76rem -1.46rem;}
+        .day2 .section3 a.lq.on{background-position:-3.76rem -1.46rem;}
+        @keyframes move {
+            0%{
+                transform:scale(1);
+            }
+            100%{
+                transform:scale(1.1);
+            }
+        }
+        @media screen and (min-device-aspect-ratio: 720/1024){
+            .day1 .section1 .start{
+                margin-top: .1rem;
+            }
+            .day1 .section1 .lead1{
+                margin-top: .2rem;
+            }
+            .day1 .section1 .person{
+                bottom: -1rem;
+                height: 10rem;
+                background-size: 100% 100%;
+            }
+        }
+    </style>
+</head>
+<body class="day1">
+<div id="autots"></div>
+<div class="section section1 on">
+    <h1><a ontouchend="PTTSendClick('section1','logo','云裳羽衣');" class="spr" href="//ysyy.qq.com/m">云裳羽衣</a></h1>
+    <h2 class="slogan">山海异闻知多少</h2>
+    <div class="person">角色</div>
+    <div class="lead1">欢迎来到【山海异闻知多少】。每日完成趣味答题闯关，可获得山海界为你准备的<em>金币奖励</em>。闯关失败虽然会掉进湖里，但是湖底也有几率获得好东西哟~~山海异闻趣味<em>闯关14天</em>，等你来！</div>
+    <div class="lead2">天渊观星解象发现了九重星天正在崩坏，为了修复神秘的时空裂缝，天渊再临为你而来！在你的帮助下，天渊能否顺利守护九重星天？开始挑战吧！考验你对九重星天的了解，赢取不同的<em>金币奖励</em>~</div>
+    <a ontouchend="PTTSendClick('section1','kstz','开始挑战');" class="start spr" href="javascript:pageChange(1);">开始挑战</a>
+</div>
+<div class="section section2 ">
+    <h1><a ontouchend="PTTSendClick('section2','logo','云裳羽衣');" class="spr" href="//ysyy.qq.com/m">云裳羽衣</a></h1>
+    <h2 class="slogan">山海异闻知多少</h2>
+    <div class="insert">
+    </div>
+    <a ontouchend="PTTSendClick('section2','qrxz','确认选择');" class="verify spr" href="javascript:;">确认选择</a>
+</div>
+<div class="section section3 ">
+    <h1><a ontouchend="PTTSendClick('section3','logo','云裳羽衣');" class="spr" href="//ysyy.qq.com/m">云裳羽衣</a></h1>
+    <h2 class="slogan">山海异闻知多少</h2>
+    <div class="pop">
+        <div class="box"></div>
+    </div>
+    <a ontouchend="PTTSendClick('section3','ljlq','立即领取')" class="lq spr" href="javascript:;">立即领取</a>
+</div>
+
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/bsCommonFiles/js/milo.strict.v2.js"></script>
+<script src="//ossweb-img.qq.com/images/js/bsCommonFiles/js/amsUtils.js"></script>
+<!-- PHP获取服务器时间 -->
+<script src='//apps.game.qq.com/CommArticle/app/reg/gdate.php'></script>
+<!--横竖屏提示-->
+<script src="js/prompt.js"></script>
+<script>
+    var Autolandacr = new Autolandacr({
+        id: 'autots', //注入父级ID..
+        dir: '1' //填入1\0;  1代表横屏提示.0代表竖屏提示.默认带横竖屏input.空白默认为1
+    })
+</script>
+<script>
+    // if(window.location.search == "") location.href = location.href + sessionStorage.tokenParams
+    var token = window.location.search
+    var rightAnswer = 0
+    var already = false
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"a20180823shywig", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"微社区趣味问答第二期", //必填项:页面中文名
+        project: "ingame", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;
+        osact:1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime:1 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+
+    TGMobileShare({
+        shareTitle:'', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'https://game.gtimg.cn/images/ysyy/cp/a20171225yym/share.png', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:location.href, //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'a20180823shywig' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+
+    $.ajax({
+        url: '//appt.ingame.qq.com/php/ingame/gifts/gift_receive_records.php' + token,
+        dataType: 'jsonp',
+        data: {
+            game: 'ysyy',
+            start_time: parseInt(new Date(new Date(new Date().toLocaleDateString()).getTime())/1000),
+            sandbox: '1'
+        },
+        success: function(res) {
+            if(res.status == "SUCCESS") {
+                //getQuestions()
+                if(res.data.gift_records.length == 0 || res.data.gift_records[0].gift_status == 0){
+                    getQuestions()
+                }else {
+                    already = true
+                }
+            }
+        }
+    })
+
+    function getGiftList() {
+        $.ajax({
+            url: '//appt.ingame.qq.com/php/ingame/gifts/gift_list.php' + token,
+            dataType: 'jsonp',
+            data: {
+                //total_num:3,
+                gift_type: '1110100',
+                game: 'ysyy',
+                // interfaceType: '61007',
+                // buss: 'ingame_ask_quwei2',
+                sandbox: '1'
+            },
+            success: function(res) {
+                if(res.status == "SUCCESS") {
+                    /* if(res.data.gifts.length == 0 || res.data.gifts[0].gift_status == 0){
+                        console.log('getGift()=====================')
+                    }else {
+
+                    } */
+                    getGift(res.data.gifts[0])
+                }
+            }
+        })
+    }
+
+    
+
+    function getQuestions() {
+        $.ajax({
+            url: '//appt.ingame.qq.com/php/ingame/interestcenter/interestcenterinterface.php' + token,
+            dataType: 'jsonp',
+            data: {
+                num:3,
+                game: 'ysyy',
+                interfaceType: '61002',
+                buss: 'ingame_ask_quwei2',
+                sandbox: '1'
+            },
+            success: function(res) {
+                if(res.status == "SUCCESS") {
+                    question = res.data.questions
+                    formatQue(question)
+                }
+            }
+        })
+    }
+
+    function formatQue(que) {
+        var i, len, temp = {}, res = {}, resArr= [], ti={
+            res: '',
+            bt: ''
+        },tiArr=[],temp = {
+                key: '',
+                ti: [
+
+                ]
+            }
+        for(i = 0, len = que.length; i < len; i++) {
+            ti={
+                res: [],
+                bt: '',
+                sure: ''
+            }
+            
+            temp['key'] = que[i].hint
+            resArr = []
+            ti['bt'] = que[i].descr
+            ti['sure'] = que[i].right
+            res.name =  que[i].choices[0]['A'].split('|')[0]
+            res.src =  que[i].choices[0]['A'].split('|')[1]
+            resArr.push(JSON.parse(JSON.stringify(res)))
+            res.name =  que[i].choices[1]['B'].split('|')[0]
+            res.src =  que[i].choices[1]['B'].split('|')[1]
+            resArr.push(JSON.parse(JSON.stringify(res)))
+            res.name =  que[i].choices[2]['C'].split('|')[0]
+            res.src =  que[i].choices[2]['C'].split('|')[1]
+            resArr.push(JSON.parse(JSON.stringify(res)))
+            ti['res'] = (JSON.parse(JSON.stringify(resArr)))
+            tiArr.push(JSON.parse(JSON.stringify(ti)))
+            temp['ti'] = JSON.parse(JSON.stringify(tiArr))
+        }
+        q1.push(temp)
+        
+        console.log('q1===============', q1)
+        showImg(0, initIndex)
+
+    }
+  
+  
+
+    
+    var t1=[
+        {
+        wa:'很遗憾今日闯关失败，掉进了湖里，但是在湖水里扑腾时你意外抓到了这份宝物',
+        src:'//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/gold.png',
+        jb:'1888金币'
+       },
+        {
+        wa:'今日未能闯关成功，大人不要灰心，收下这份奖励明日再来吧~',
+        src:'//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/gold.png',
+        jb:'2888金币'
+       },
+        {
+        wa:'今日闯关成功，小小心意以表鼓励~',
+        src:'//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/gold.png',
+        jb:'3888金币'
+       }
+    ]
+
+    // var _gapTime = typeof(json_curdate)!=="undefined" ? +new Date(json_curdate.replace(/-/g,"/"))-(+new Date()) : 0;
+    var _gapTime =new Date(json_curdate.replace(/-/g,"/"));
+    var _tady = new Date(2018,09,13,00,00,00);
+    console.log(+_tady)
+    console.log( +_gapTime)
+    var dayNum =_gapTime.getDay();         //记录天数
+    var sureResult = '';   //记录正确的答案
+    var selectResult = ''  //选择的答案
+    var selectIndex = 0;   //获得点击的答案index
+    var initIndex =0;     //关卡默认为0
+    var flag = true;     //答案是否可点击
+    var correctNum = 0;  //记录答对题的个数
+    //var arr = [];
+    
+    var q1 = []
+    var arr1 = t1;
+    if(_gapTime>_tady){
+        $("body").removeClass("day1").addClass("day2")
+    }else {
+       
+        $("body").removeClass("day2").addClass("day1")
+    }
+    //*********题目切换**********
+    function showImg(num, index) {
+        console.log(num, index)
+        console.log('showImg==============', q1)
+        sureResult = q1[num].ti[index].sure;
+        var imgHyml='<div class="keyword spr">\n' +
+            '关键词：<em>'+q1[num].key+'</em>\n' +
+            '</div>\n' +
+            '<p class="q"><span class="spr fl">第'+(index+1)+'关</span><strong class="fl">'+q1[num].ti[index].bt+'</strong></p>'+
+            '<ul class="list">' ;
+        for(var i=0; i<q1[num].ti[index].res.length; i++) {
+            imgHyml += '<li ontouchend="PTTSendClick(\'section3\',\'result\',\'答案\');">\n' +
+                ' <em class="spr">'+((i==0)?'A': (i == 1)?'B': 'C')+'</em>\n' +
+                '<div class="border"><img src="'+q1[num].ti[index].res[i].src+'" alt=""></div>\n' +
+                '<span>'+q1[num].ti[index].res[i].name+'</span>\n' +
+                '</li>'
+        }
+           imgHyml += '</ul>';
+        $('.insert').html(imgHyml)
+        initIndex++;
+        flag=true;
+    }
+    //*********弹窗奖励切换**********
+    function showPmg(index) {
+        var imgHtml='<p>'+arr1[index].wa+'</p>\n' +
+            '        <div class="award spr"><img src="'+arr1[index].src+'" alt=""></div>\n' +
+            '        <span>'+arr1[index].jb+'</span>';
+        $(".box").html(imgHtml);
+        $(".pop").animate({"width":"6.27rem"})
+    }
+
+    //*********确认选择**********
+    $('.verify').on('click', function () {
+        flag=false;
+        if(!$(".list li").hasClass("on")){
+            alert("请先选择上面的答案！")
+            flag=true;
+        }else{
+            if(selectResult == sureResult) {
+                correctNum++;
+                $('.list li').eq(selectIndex).find('img').attr('src', '//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/correct.png')
+            }else {
+                $('.list li').eq(selectIndex).find('img').attr('src', '//game.gtimg.cn/images/ysyy/ingame/cp/a20180823shywig/error.png')
+            }
+            if(initIndex<3){
+                    $(".list").fadeOut(2000,setTimeout(function () {
+                        showImg(0, initIndex)
+                    },1000))
+
+            }else {
+                setTimeout(function () {
+                    pageChange(2)
+                    changePop(correctNum)
+                    rightAnswer = correctNum
+                },800)
+
+            }
+
+        }
+
+    })
+    //    页面切换
+    function pageChange(index) {
+        console.log('already && index == 1', already, index)
+        if(already && index == 1) {
+            alert('大人今日已答题，请明天再来吧')
+            return 
+        }
+        $('.section').hide();
+        $('.section').eq(index).fadeIn();
+
+    }
+    //    根据答对题的个数切换奖品
+    function changePop(correctNum) {    
+        switch (correctNum){
+            case 0:
+                showPmg(0)
+                break;
+            case 1:
+                showPmg(0)
+                break;
+            case 2:
+                showPmg(1)
+                break;
+            case 3:
+                showPmg(2)
+                break;
+        }
+    }
+
+    function getGift(gift) {
+        amsUtils.getAward({
+            cfgId: gift.cfgid,   //
+            amsId: gift.amsid,  //
+            actId: gift.actid,  //以上三个字段是ams活动号生成
+            giftId: gift.gift_id,
+            sandbox: 1,
+            //interfaceType: '61003', //后端条件cgi接口
+            game: 'ysyy',  // 游戏id，右后端指定
+            //id: app.questions.id, //需要额外传递给后端的字段
+            fail: function (callbackObj) {  //兑换失败的回调
+                alert('很抱歉，奖励领取失败，大人请稍候再试！')
+                //alert(callbackObj.sMsg) //回答错误
+            },
+            success: function (data) { //兑换成功的回调
+                alert('大人已成功领取奖励，请查收书信') // 礼包名称
+            }
+        });
+    }
+    //    选择题目
+    $(".insert").on("click",".list li",function () {
+        var index = $(this).index();
+        if(index == 0) {
+            selectResult = 'A'
+        }else if(index == 1) {
+            selectResult = 'B'
+        }else if(index ==2) {
+            selectResult = 'C'
+        }
+        selectIndex = index;
+        if(flag==true){
+            $(this).addClass("on").siblings('li').removeClass("on")
+        }
+    })
+
+    //    点击领取奖励
+    $(".section3 .lq").on("click",function () {
+        $.ajax({
+            url: '//appt.ingame.qq.com/php/ingame/interestcenter/interestcenterinterface.php' + token,
+            dataType: 'jsonp',
+            data: {
+                total_num:3,
+                correct_num: correctNum < 1 ? 1 : correctNum,
+                game: 'ysyy',
+                interfaceType: '61007',
+                buss: 'ingame_ask_quwei2',
+                sandbox: '1'
+            },
+            success: function(res) {
+
+            }
+        })
+
+        $(this).addClass("on");
+        setTimeout(function () {
+            getGiftList()
+            //getGift()
+            //pageChange(0)
+            //初始化页面
+            //window.location.reload()
+        },1000)
+    })
+
+
+    //showImg(dayNum, initIndex)
+
+</script>
+</body>
+</html>

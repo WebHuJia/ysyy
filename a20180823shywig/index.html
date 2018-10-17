@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="Keywords" content="云裳羽衣、云裳羽衣官网、腾讯《云裳羽衣》手游官方网站、云裳羽衣游戏、云裳羽衣手游、霓裳羽衣"/>
+    <meta name="Description" content="微社区趣味问答第二期，持续28天，内容覆盖山海异闻与九天星卷，每日可参加">
+    <title>云裳羽衣微官网-腾讯游戏</title>
+    <!-- 设计：微聚CP  |  重构：微聚CP  |  创建：2018-08-23 -->
+    <style>
+        html {
+            font-size: calc(100vw / 750 * 100);
+        }
+        @media screen and (orientation: landscape) {
+            html { font-size: calc(100vw / 1334 * 100);}
+        }
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+        details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+        table{border-collapse:collapse;border-spacing:0}
+        audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+        fieldset,img{border:0}
+        address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+        ol,ul{list-style:none}
+        caption,th{text-align:left}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        q:before,q:after{content:''}
+        abbr,acronym{border:0;font-variant:normal}
+        sup{vertical-align:text-top}
+        sub{vertical-align:text-bottom}
+        input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;outline: none;}
+        input,textarea,select{*font-size:100%}
+        a {text-decoration: none;outline: none;}
+        .q:after {content:""; display:block; height:0; clear:both; overflow:hidden;}
+        html{font-family:'\5FAE\8F6F\96C5\9ED1';}
+        button{font-family:'\5FAE\8F6F\96C5\9ED1';}
+        *{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}
+        input,select{border-radius: 0;}
+        select{appearance: none;-webkit-appearance:none;-moz-appearance:none;}
+        .fr{float: right;}
+        .fl{float: left;}
+        /*通用样式*/
+        .day1 .spr{background: url(ossweb-img/spr.png) no-repeat 50%/7.3rem 5.4rem;}
+        .day2 .spr{background: url(ossweb-img/spr1.png) no-repeat 50%/7.3rem 5.4rem;}
+        body.day1{width:100vw;height: 100vh; background: url(ossweb-img/bg.jpg) no-repeat;background-size: cover;}
+        body.day2{width:100vw;height: 100vh; background: url(ossweb-img/bg1.jpg) no-repeat;background-size: cover;}
+        .day1 .section{display: none;min-height: 100vh;}
+        .day2 .section{display: none;min-height: 100vh;}
+        .day1 .section.on{display: block;}
+        .day2 .section.on{display: block;}
+        /*section1*/
+        .day1 .section1,.day1 .section2,.day1 .section3{overflow: hidden;}
+        .day2 .section1,.day2 .section2,.day2 .section3{overflow: hidden;}
+        .day1 .section1 h1 a,.day1 .section2 h1 a,.day1 .section3 h1 a{display: block;width:1.7rem;height:.8rem;background-position:-5.4rem -2.7rem;text-indent: -9999rem;margin:.5rem 0 0 .6rem;}
+        .day2 .section1 h1 a,.day2 .section2 h1 a,.day2 .section3 h1 a{display: block;width:1.7rem;height:.8rem;background-position:-5.4rem -2.7rem;text-indent: -9999rem;margin:.5rem 0 0 .6rem;}
+        .day1 .section1 .slogan{width:3.4rem;height:4.36rem;background: url(ossweb-img/slogan-1.png) no-repeat center/cover;text-indent: -9999rem;margin: .2rem 0 0 1.5rem;position: relative;z-index: 1;}
+        .day2 .section1 .slogan{width:3.4rem;height:4.36rem;background: url(ossweb-img/slogan-11.png) no-repeat center/cover;text-indent: -9999rem;margin: .2rem 0 0 1.5rem;position: relative;z-index: 1;}
+        .day1 .section1 .person{position: absolute;width:3.4rem;height:11.26rem;bottom: 0;right: 0;background: url(ossweb-img/person.png) no-repeat center/cover;text-indent: -9999rem;z-index: 0;}
+        .day2 .section1 .person{position: absolute;width:4.56rem;height:11.26rem;bottom: 0;right: 0;background: url(ossweb-img/person1.png) no-repeat center/cover;text-indent: -9999rem;z-index: 0;}
+        .lead1,.lead2{display: none;}
+        .day1 .section1 .lead1{display: block; font-size: .26rem;color: #c0fced;width: 6.05rem;position: relative;z-index: 1;margin: .8rem auto 0;line-height: 1.8;}
+        .day2 .section1 .lead2{display: block; font-size: .26rem;color: #4e59b4;width: 6.03rem;height: 2.03rem; position: relative;z-index: 1;margin: .8rem auto 0;line-height: 1.8;background: url(ossweb-img/guide.png) no-repeat center/cover;box-sizing: border-box;padding: .1rem .15rem;}
+        .day1 .section1 .lead1 em{color: #2cfdff;}
+        .day2 .section1 .lead2 em{color: #7d75ff;}
+        .day1 .section1 .lead1:after{position: absolute;content:'';background: url(ossweb-img/spr.png) no-repeat -4.41rem -2.76rem/7.3rem 5.4rem;width:.3rem;height:.2rem;left: -.3rem;top: -.1rem;}
+        .day1 .section1 .lead1:before{position: absolute;content:'';background: url(ossweb-img/spr.png) no-repeat -4.89rem -2.76rem/7.3rem 5.4rem;width:.3rem;height:.2rem;right: -.1rem;bottom: -.1rem;}
+        .day1 .section1 .start{display:block;text-indent: -9999rem;width:3.45rem;height:1.13rem;background-position:-.1rem -.1rem;margin: .85rem auto 0;position: relative;z-index: 1;animation: move .6s linear infinite alternate;}
+        .day2 .section1 .start{display:block;text-indent: -9999rem;width:3.45rem;height:1.13rem;background-position:-.1rem -.1rem;margin: .85rem auto 0;position: relative;z-index: 1;animation: move .6s linear infinite alternate;}
+        /*section2*/
+        .day1 .section2 .slogan,.day1 .section3 .slogan{width:4.91rem;height:2.5rem;background: url(ossweb-img/slogan-2.png) no-repeat center/cover;text-indent: -9999rem;margin: .2rem auto 0;position: relative;z-index: 1;}
+        .day2 .section2 .slogan,.day2 .section3 .slogan{width:4.91rem;height:2.5rem;background: url(ossweb-img/slogan-22.png) no-repeat center/cover;text-indent: -9999rem;margin: .2rem auto 0;position: relative;z-index: 1;}
+        .day1 .section2 .keyword{width:3.26rem;height:.78rem;background-position: -.1rem -2.76rem;font-size: .32rem;color: #beffed;margin: .2rem auto 0;box-sizing: border-box;padding:.15rem .55rem;}
+        .day2 .section2 .keyword{width:3.26rem;height:.78rem;background-position: -.1rem -2.76rem;font-size: .32rem;color: #4e59b4;margin: .2rem auto 0;box-sizing: border-box;padding:.15rem .55rem;}
+        .day1 .section2 .keyword em{color: #2cfdff;}
+        .day1 .section2 p{width:5.8rem;font-size:.26rem;color: #beffed;text-align: center;margin:.15rem auto 0;}
+        .day2 .section2 p{width:5.8rem;font-size:.26rem;color: #1e2667;text-align: center;margin:.15rem auto 0;}
+        .day1 .section2 p span{display: inline-block;width:.85rem;height:.38rem;box-sizing: border-box;text-align: center;line-height: .39rem;color: #f0fffa;background-position:-3.36rem -2.76rem;margin-right: .1rem;}
+        .day1 .section2 p strong{text-align: left;width: 4.7rem;}
+        .day2 .section2 p strong{text-align: left;width: 4.7rem;}
+        .day2 .section2 p span{display: inline-block; width:.85rem;height:.38rem;box-sizing: border-box;text-align: center;line-height: .39rem;color: #a1d1f7;background-position:-3.36rem -2.76rem;margin-right: .1rem;}
+        .day1 .section2 .list{font-size:.26rem;color: #32b0bd;display: flex;flex-wrap: nowrap;justify-content: space-between;width:6.6rem;margin: .55rem;transition: opacity 1s}
+        .day2 .section2 .list{font-size:.26rem;color: #648fe8;display: flex;flex-wrap: nowrap;justify-content: space-between;width:6.6rem;margin: .55rem;transition: opacity 1s}
+        .day1 .section2 .list li{position: relative; width:1.97rem;height:3.11rem;background: url(ossweb-img/topic.png) no-repeat center/cover;text-align: center;transition: all .3s;top: 0;}
+        .day2 .section2 .list li{position: relative; width:1.97rem;height:3.11rem;background: url(ossweb-img/topic1.png) no-repeat center/cover;text-align: center;transition: all .3s;top: 0;}
+        .day1 .section2 .list li em{font-style: normal;font-size:.28rem;color:#fff;width:.53rem;height:.53rem;display: block;text-align: center;line-height: .53rem;margin:.28rem auto 0;background-position:-1.81rem -3.65rem;}
+        .day2 .section2 .list li em{font-style: normal;font-size:.28rem;color:#fff;width:.53rem;height:.53rem;display: block;text-align: center;line-height: .53rem;margin:.28rem auto 0;background-position:-1.815rem -3.65rem;}
+        .day1 .section2 .list li .border{width: 1.1rem;height: 1.1rem;border-radius: 50%;border: 1px solid #aceae2;margin: .1rem auto 0;}
+        .day2 .section2 .list li .border{width: 1.1rem;height: 1.1rem;border-radius: 50%;border: 1px solid #bbd1fc;margin: .1rem auto 0;}
+        .day1 .section2 .list li img{display: block;width:1.03rem;height:1.03rem;border-radius: 50%;margin: .04rem auto;}
+        .day2 .section2 .list li img{display: block;width:1.03rem;height:1.03rem;border-radius: 50%;margin: .04rem auto;}
+        .day1 .section2 .list li span{display: block;margin-top: .2rem;}
+        .day2 .section2 .list li span{display: block;margin-top: .2rem;}
+        .day1 .section2 .list li.on{top: -.35rem;}
+        .day2 .section2 .list li.on{top: -.35rem;}
+        .day1 .section2 .verify{display: block;width:3.45rem;height:1.13rem;text-indent: -9999rem;background-position: -3.75rem -.1rem;margin: .45rem auto 0;animation: move .6s linear infinite alternate;}
+        .day2 .section2 .verify{display: block;width:3.45rem;height:1.13rem;text-indent: -9999rem;background-position: -3.75rem -.1rem;margin: .45rem auto 0;animation: move .6s linear infinite alternate;}
+        /*section3*/
+        .day1 .section3 .pop{width:0;height:3.78rem;background: url(ossweb-img/award-bg.png) no-repeat center/cover;margin: .65rem auto 0;position: relative;transition: width .3s;padding-top: 0.01rem;}
+        .day2 .section3 .pop{width:0;height:3.78rem;background: url(ossweb-img/award-bg1.png) no-repeat center/cover;margin: .65rem auto 0;position: relative;transition: width .3s;padding-top: 0.01rem;}
+        .day1 .section3 .pop:after{position: absolute;content: "";width:.15rem;height:4.01rem;background:url(ossweb-img/aft.png) no-repeat center/cover;left: -.15rem;top: -.1rem;}
+        .day2 .section3 .pop:after{position: absolute;content: "";width:.15rem;height:4.01rem;background:url(ossweb-img/aft1.png) no-repeat center/cover;left: -.15rem;top: -.1rem;}
+        .day1 .section3 .pop:before{position: absolute;content: "";width:.15rem;height:4.01rem;background:url(ossweb-img/aft.png) no-repeat center/cover;right: -.15rem;top: -.1rem;}
+        .day2 .section3 .pop:before{position: absolute;content: "";width:.15rem;height:4.01rem;background:url(ossweb-img/aft1.png) no-repeat center/cover;right: -.15rem;top: -.1rem;}
+        .day1 .section3 p{width: 4.75rem;text-align: center;font-size:.26rem;color: #32b0bd;line-height:1.6;margin:.5rem auto 0;}
+        .day2 .section3 p{width:5.5rem;text-align: center;font-size:.26rem;color: #648fe8;line-height:1.6;margin:.5rem auto 0;}
+        .day1 .section3 .pop .award{width:1.58rem;height:1.58rem;background-position:-.1rem -3.74rem;margin: .15rem auto 0;overflow: hidden;}
+        .day2 .section3 .pop .award{width:1.58rem;height:1.58rem;background-position:-.1rem -3.74rem;margin: .15rem auto 0;overflow: hidden;}
+        .day1 .section3 .pop .award img{display: block;width:1.27rem;height:.91rem;margin: .32rem auto;}
+        .day2 .section3 .pop .award img{display: block;width:1.27rem;height:.91rem;margin: .32rem auto;}
+        .day1 .section3 .pop span{display: block;font-size:.26rem;color: #32b0bd;text-align: center;margin-top: .05rem;}
+        .day2 .section3 .pop span{display: block;font-size:.26rem;color: #648fe8;text-align: center;margin-top: .05rem;}
+        .day1 .section3 .pop .box{width: 100%;height: 100%;overflow: hidden;}
+        .day2 .section3 .pop .box{width: 100%;height: 100%;overflow: hidden;}
+        .day1 .section3 a.lq{display: block;width: 3.45rem;height: 1.13rem;text-indent: -9999rem;background-position: -.1rem -1.43rem;margin: .58rem auto 0;animation: move .6s linear infinite alternate;}
+        .day2 .section3 a.lq{display: block;width: 3.45rem;height: 1.13rem;text-indent: -9999rem;background-position: -.1rem -1.43rem;margin: .58rem auto 0;animation: move .6s linear infinite alternate;}
+        .day1 .section3 a.lq.on{background-position:-3.76rem -1.46rem;}
+        .day2 .section3 a.lq.on{background-position:-3.76rem -1.46rem;}
+        @keyframes move {
+            0%{
+                transform:scale(1);
+            }
+            100%{
+                transform:scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body class="day1">
+<div id="autots"></div>
+<div class="section section1 on">
+    <h1><a ontouchend="PTTSendClick('section1','logo','云裳羽衣');" class="spr" href="//ysyy.qq.com/m">云裳羽衣</a></h1>
+    <h2 class="slogan">山海异闻知多少</h2>
+    <div class="person">角色</div>
+    <div class="lead1">欢迎来到【山海异闻知多少】。每日完成趣味答题闯关，可获得山海界为你准备的<em>金币奖励</em>。闯关失败虽然会掉进湖里，但是湖底也有几率获得好东西哟~~山海异闻趣味<em>闯关14天</em>，等你来！</div>
+    <div class="lead2">九重星天的崩坏越来越严重了，天渊星君想了个法子，把<em>九天星卷</em>发生的事情来记录下来，并用这些事情来封印时空裂缝。每日来修复时空裂缝，可获得九重星天提供的<em>金币奖励</em>。</div>
+    <a ontouchend="PTTSendClick('section1','kstz','开始挑战');" class="start spr" href="javascript:pageChange(1);">开始挑战</a>
+</div>
+<div class="section section2 ">
+    <h1><a ontouchend="PTTSendClick('section2','logo','云裳羽衣');" class="spr" href="//ysyy.qq.com/m">云裳羽衣</a></h1>
+    <h2 class="slogan">山海异闻知多少</h2>
+    <div class="insert">
+        <!--<div class="keyword spr">-->
+            <!--关键词：<em>灵兽</em>-->
+        <!--</div>-->
+        <!--<p><span class="spr">第1关</span><strong>在3-1突生变故中，主角醒来最先看到的动物是？</strong></p>-->
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<em class="spr">A</em>-->
+                <!--<div class="border"><img src="ossweb-img/1.png" alt=""></div>-->
+                <!--<span>熊猫</span>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<em class="spr">B</em>-->
+                <!--<div class="border"><img src="ossweb-img/1.png" alt=""></div>-->
+                <!--<span>熊猫</span>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<em class="spr">C</em>-->
+                <!--<div class="border"><img src="ossweb-img/1.png" alt=""></div>-->
+                <!--<span>熊猫</span>-->
+            <!--</li>-->
+        <!--</ul>-->
+    </div>
+    <a ontouchend="PTTSendClick('section2','qrxz','确认选择');" class="verify spr" href="javascript:;">确认选择</a>
+</div>
+<div class="section section3 ">
+    <h1><a ontouchend="PTTSendClick('section3','logo','云裳羽衣');" class="spr" href="//ysyy.qq.com/m">云裳羽衣</a></h1>
+    <h2 class="slogan">山海异闻知多少</h2>
+    <div class="pop">
+        <div class="box"></div>
+        <!--<p>今日未能闯关成功，大人不要灰心，收下这份奖励明日再来吧~</p>-->
+        <!--<div class="award spr"><img src="ossweb-img/gold.png" alt=""></div>-->
+        <!--<span>金币6666</span>-->
+    </div>
+    <a ontouchend="PTTSendClick('section3','ljlq','立即领取')" class="lq spr" href="javascript:;">立即领取</a>
+</div>
+
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<!-- PHP获取服务器时间 -->
+<script src='//apps.game.qq.com/CommArticle/app/reg/gdate.php'></script>
+<!--横竖屏提示-->
+<script src="js/prompt.js"></script>
+<script>
+    var Autolandacr = new Autolandacr({
+        id: 'autots', //注入父级ID..
+        dir: '1' //填入1\0;  1代表横屏提示.0代表竖屏提示.默认带横竖屏input.空白默认为1
+    })
+</script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"a20180823shywig", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"微社区趣味问答第二期", //必填项:页面中文名
+        project: "ingame", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;
+        osact:1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime:1 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+
+    TGMobileShare({
+        shareTitle:'', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'https://game.gtimg.cn/images/ysyy/cp/a20171225yym/share.png', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:location.href, //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'a20180823shywig' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+
+    var q1=[
+        {
+            key:"灵兽",
+            ti: [
+                {
+               bt: '在3-1突生变故中，主角醒来最先看到的动物是？',
+               sure: 'B',
+               res: [
+                   {
+                   name:'熊猫',
+                   src:'ossweb-img/t1/t1-1.png'
+               },
+                   {
+                       name:'灵鹿',
+                       src:'ossweb-img/t1/t1-2.png'
+                   },
+                   {
+                       name:'半半',
+                       src:'ossweb-img/t1/t1-3.png'
+                   }
+               ]
+            },
+                {
+                    bt: '在3-1突生变故中，主角换完装后为什么熊猫团子绕着主角转圈？',
+                    sure: 'C',
+                    res: [
+                        {
+                            name:'妩媚提升',
+                            src:'ossweb-img/t1/t2-1.png'
+                        },
+                        {
+                            name:'英气提升',
+                            src:'ossweb-img/t1/t2-2.png'
+                        },
+                        {
+                            name:'亲和力提升',
+                            src:'ossweb-img/t1/t2-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-1突生变故中，亲近小熊猫的正确姿势是装扮成？',
+                    sure: 'C',
+                    res: [
+                        {
+                            name:'装扮成玄麒',
+                            src:'ossweb-img/t1/t3-1.png'
+                        },
+                        {
+                            name:'装扮成半半',
+                            src:'ossweb-img/t1/t3-2.png'
+                        },
+                        {
+                            name:'装扮成灵兽',
+                            src:'ossweb-img/t1/t3-3.png'
+                        }
+                    ]
+                },
+            ]
+        },{
+            key:"裂隙",
+            ti: [
+                {
+                    bt: '在3-2山海灵主中，产生严重的裂隙代表？',
+                    sure: 'B',
+                    res: [
+                        {
+                            name:'剧情崩坏',
+                            src:'ossweb-img/t1/t4-1.png'
+                        },
+                        {
+                            name:'世界崩坏',
+                            src:'ossweb-img/t1/t4-2.png'
+                        },
+                        {
+                            name:'人设崩坏',
+                            src:'ossweb-img/t1/t4-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-2山海灵主中，修复裂隙使用了什么技术？',
+                    sure: 'B',
+                    res: [
+                        {
+                            name:'补妆之术',
+                            src:'ossweb-img/t1/t5-1.png'
+                        },
+                        {
+                            name:'补天之术',
+                            src:'ossweb-img/t1/t5-2.png'
+                        },
+                        {
+                            name:'补气之术',
+                            src:'ossweb-img/t1/t5-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-4山海灵主中，主角修复灵湖灵力不支时，玄麒舍了什么相救？',
+                    sure: 'B',
+                    res: [
+                        {
+                            name:'舍命相救',
+                            src:'ossweb-img/t1/t6-1.png'
+                        },
+                        {
+                            name:'舍角相救',
+                            src:'ossweb-img/t1/t6-2.png'
+                        },
+                        {
+                            name:'舍钱相救',
+                            src:'ossweb-img/t1/t6-3.png'
+                        }
+                    ]
+                },
+            ]
+        },{
+            key:"玄麒",
+            ti: [
+                {
+                    bt: '在3-2山海灵主中，玄麒“树咚”主角时说“你身上的（），不属于我们山海界。”',
+                    sure: 'A',
+                    res: [
+                        {
+                            name:'气味',
+                            src:'ossweb-img/t1/t7-1.png'
+                        },
+                        {
+                            name:'衣服',
+                            src:'ossweb-img/t1/t7-2.png'
+                        },
+                        {
+                            name:'气质',
+                            src:'ossweb-img/t1/t7-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-5盛情难却中，玄麒说“我说的好看就是你现在这个样子。”是指',
+                    sure: 'B',
+                    res: [
+                        {
+                            name:'衣服好看',
+                            src:'ossweb-img/t1/t8-1.png'
+                        },
+                        {
+                            name:'人好看',
+                            src:'ossweb-img/t1/t8-2.png'
+                        },
+                        {
+                            name:'团子好看',
+                            src:'ossweb-img/t1/t8-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-7青丘狐族中，玄麒为什么要在催婚现场抱起主角离开？',
+                    sure: 'C',
+                    res: [
+                        {
+                            name:'心中暗爽',
+                            src:'ossweb-img/t1/t9-1.png'
+                        },
+                        {
+                            name:'感觉心动',
+                            src:'ossweb-img/t1/t9-2.png'
+                        },
+                        {
+                            name:'气氛尴尬',
+                            src:'ossweb-img/t1/t9-3.png'
+                        }
+                    ]
+                },
+            ]
+        },{
+            key:"化形",
+            ti: [
+                {
+                    bt: '在3-6山海华宴中，主角化形成了哪族灵兽？',
+                    sure: 'A',
+                    res: [
+                        {
+                            name:'青丘狐族',
+                            src:'ossweb-img/t1/t10-1.png'
+                        },
+                        {
+                            name:'上古狐族',
+                            src:'ossweb-img/t1/t10-2.png'
+                        },
+                        {
+                            name:'九尾狐族',
+                            src:'ossweb-img/t1/t10-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-9古老法阵中，为了防止在传送过程中受伤主角化形成了？',
+                    sure: 'B',
+                    res: [
+                        {
+                            name:'青龙',
+                            src:'ossweb-img/t1/t11-1.png'
+                        },
+                        {
+                            name:'玄武',
+                            src:'ossweb-img/t1/t11-2.png'
+                        },
+                        {
+                            name:'朱雀',
+                            src:'ossweb-img/t1/t11-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-2山海灵主中，玄麒说主角衣服湿透了，那么主角在哪里换的衣服',
+                    sure: 'C',
+                    res: [
+                        {
+                            name:'树上',
+                            src:'ossweb-img/t1/t12-1.png'
+                        },
+                        {
+                            name:'湖边',
+                            src:'ossweb-img/t1/t12-2.png'
+                        },
+                        {
+                            name:'玄麒身后',
+                            src:'ossweb-img/t1/t12-3.png'
+                        }
+                    ]
+                },
+            ]
+        },{
+            key:"宴会",
+            ti: [
+                {
+                    bt: '在3-6山海华宴中，下列哪个灵兽没有在宴会里出现？',
+                    sure: 'A',
+                    res: [
+                        {
+                            name:'半半',
+                            src:'ossweb-img/t1/t13-1.png'
+                        },
+                        {
+                            name:'小鸩',
+                            src:'ossweb-img/t1/t13-2.png'
+                        },
+                        {
+                            name:'茕茕',
+                            src:'ossweb-img/t1/t13-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-7青丘狐族中，在关于生猴子还是生麒麟蛋的问题中，麒麟到底是怎么生的？',
+                    sure: 'A',
+                    res: [
+                        {
+                            name:'胎生的',
+                            src:'ossweb-img/t1/t14-1.png'
+                        },
+                        {
+                            name:'卵生的',
+                            src:'ossweb-img/t1/t14-2.png'
+                        },
+                        {
+                            name:'天地孕育',
+                            src:'ossweb-img/t1/t14-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-7青丘狐族中，玄麒跟主角站在舞台上时，天空飘落的是？',
+                    sure: 'A',
+                    res: [
+                        {
+                            name:'花瓣雨',
+                            src:'ossweb-img/t1/t15-1.png'
+                        },
+                        {
+                            name:'少女心',
+                            src:'ossweb-img/t1/t15-2.png'
+                        },
+                        {
+                            name:'小星星',
+                            src:'ossweb-img/t1/t15-3.png'
+                        }
+                    ]
+                },
+            ]
+        },{
+            key:"撩妹",
+            ti: [
+                {
+                    bt: '在整个山海异闻中，玄麒一共抱了主角几次',
+                    sure: 'C',
+                    res: [
+                        {
+                            name:'4次',
+                            src:'ossweb-img/t1/t16-1.png'
+                        },
+                        {
+                            name:'5次',
+                            src:'ossweb-img/t1/t16-2.png'
+                        },
+                        {
+                            name:'6次',
+                            src:'ossweb-img/t1/t16-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-9古老法阵中，玄麒说主角睡觉的样子像什么，他忍不住想戳戳？',
+                    sure: 'A',
+                    res: [
+                        {
+                            name:'像团子',
+                            src:'ossweb-img/t1/t17-1.png'
+                        },
+                        {
+                            name:'像灵猫',
+                            src:'ossweb-img/t1/t17-2.png'
+                        },
+                        {
+                            name:'像半半',
+                            src:'ossweb-img/t1/t17-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-7青丘狐族中，玄麒是如何把主角举上舞台的？',
+                    sure: 'C',
+                    res: [
+                        {
+                            name:'公主抱式',
+                            src:'ossweb-img/t1/t18-1.png'
+                        },
+                        {
+                            name:'捧手心式',
+                            src:'ossweb-img/t1/t18-2.png'
+                        },
+                        {
+                            name:'举高高式',
+                            src:'ossweb-img/t1/t18-3.png'
+                        }
+                    ]
+                },
+            ]
+        },{
+            key:"天渊",
+            ti: [
+                {
+                    bt: '在3-8崖顶微风中，天渊为什么叫玄麒“小玄麒”',
+                    sure: 'A',
+                    res: [
+                        {
+                            name:'好兄弟',
+                            src:'ossweb-img/t1/t19-1.png'
+                        },
+                        {
+                            name:'好师徒',
+                            src:'ossweb-img/t1/t19-2.png'
+                        },
+                        {
+                            name:'好姐妹',
+                            src:'ossweb-img/t1/t19-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-10天渊星君中，天渊觉得半半怎么样？',
+                    sure: 'C',
+                    res: [
+                        {
+                            name:'很可爱',
+                            src:'ossweb-img/t1/t20-1.png'
+                        },
+                        {
+                            name:'很胖胖',
+                            src:'ossweb-img/t1/t20-2.png'
+                        },
+                        {
+                            name:'很能吃',
+                            src:'ossweb-img/t1/t20-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt: '在3-10天渊星君中，天渊为什么让主角藏起来？',
+                    sure: 'C',
+                    res: [
+                        {
+                            name:'玩捉迷藏',
+                            src:'ossweb-img/t1/t21-1.png'
+                        },
+                        {
+                            name:'父母回家',
+                            src:'ossweb-img/t1/t21-2.png'
+                        },
+                        {
+                            name:'司命查岗',
+                            src:'ossweb-img/t1/t21-3.png'
+                        }
+                    ]
+                },
+            ]
+        },
+    ]
+    var q2 = [
+        {
+            key:"命运",
+            ti:[
+                {
+                bt:"在4-1重逢之时中，没有传送到九重星天的原因是？",
+                sure:'A',
+                res:[
+                    {
+                        name:'紫薇陨落',
+                        src:'ossweb-img/t2/t1-1.png'
+                    },
+                    {
+                        name:'天渊操纵',
+                        src:'ossweb-img/t2/t1-2.png'
+                    },{
+                        name:'半半失误',
+                        src:'ossweb-img/t2/t1-3.png'
+                    }
+                ]
+                },
+                {
+                bt:"在4-1重逢之时中，半半说到达九重星天后命运录一直指向？",
+                sure:'C',
+                res:[
+                    {
+                        name:'半半',
+                        src:'ossweb-img/t2/t2-1.png'
+                    },
+                    {
+                        name:'司命',
+                        src:'ossweb-img/t2/t2-2.png'
+                    },{
+                        name:'天渊',
+                        src:'ossweb-img/t2/t2-3.png'
+                    }
+                ]
+                },
+                {
+                bt:"在4-5魂归之处中，半半说为什么这个世界没有崩溃？",
+                sure:'A',
+                res:[
+                    {
+                        name:'紫薇没有死',
+                        src:'ossweb-img/t2/t3-1.png'
+                    },
+                    {
+                        name:'剧情没有崩',
+                        src:'ossweb-img/t2/t3-2.png'
+                    },{
+                        name:'人设没有崩',
+                        src:'ossweb-img/t2/t3-3.png'
+                    }
+                ]
+                }
+            ]
+        },
+        {
+            key:"紫薇",
+            ti:[
+                {
+                    bt:"在4-3交换情报中，紫薇帝君是因为什么散尽功体？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'天灾',
+                            src:'ossweb-img/t2/t4-1.png'
+                        },
+                        {
+                            name:'流星撞击',
+                            src:'ossweb-img/t2/t4-2.png'
+                        },{
+                            name:'飓风',
+                            src:'ossweb-img/t2/t4-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-4紫薇帝君中，主角听完天渊的讲述后认为紫薇帝君？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'可怜',
+                            src:'ossweb-img/t2/t5-1.png'
+                        },
+                        {
+                            name:'无趣',
+                            src:'ossweb-img/t2/t5-2.png'
+                        },{
+                            name:'滑稽',
+                            src:'ossweb-img/t2/t5-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-4紫薇帝君中，天渊说紫薇帝君喜欢一个人提着什么东西看日升月落？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'一盏灯',
+                            src:'ossweb-img/t2/t6-1.png'
+                        },
+                        {
+                            name:'一把伞',
+                            src:'ossweb-img/t2/t6-2.png'
+                        },{
+                            name:'一柄剑',
+                            src:'ossweb-img/t2/t6-3.png'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            key:"星君",
+            ti:[
+                {
+                    bt:"在4-6偶遇岁星中，天渊为什么要主角扮成太白的样子？",
+                    sure:'B',
+                    res:[
+                        {
+                            name:'太白属南',
+                            src:'ossweb-img/t2/t7-1.png'
+                        },
+                        {
+                            name:'太白属金',
+                            src:'ossweb-img/t2/t7-2.png'
+                        },{
+                            name:'太白是女子',
+                            src:'ossweb-img/t2/t7-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-7查证消息中，主角要去哪位星君的府邸查找资料？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'天权星君',
+                            src:'ossweb-img/t2/t8-1.png'
+                        },
+                        {
+                            name:'司命星君',
+                            src:'ossweb-img/t2/t8-2.png'
+                        },{
+                            name:'岁星星君',
+                            src:'ossweb-img/t2/t8-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-9梦境之说中，天渊要求主角化形成哪位星君的样子？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'司命星君',
+                            src:'ossweb-img/t2/t9-1.png'
+                        },
+                        {
+                            name:'岁星星君',
+                            src:'ossweb-img/t2/t9-2.png'
+                        },{
+                            name:'天渊星君',
+                            src:'ossweb-img/t2/t9-3.png'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            key:"换装",
+            ti:[
+                {
+                    bt:"在4-1重逢之时中，天渊眼中讨喜可爱的样子是指？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'红鸾天喜',
+                            src:'ossweb-img/t2/t10-1.png'
+                        },
+                        {
+                            name:'朱明在离',
+                            src:'ossweb-img/t2/t10-2.png'
+                        },{
+                            name:'辰星清渊',
+                            src:'ossweb-img/t2/t10-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-2初次试探中，天渊嘴上说让主角换装的理由是？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'烧钱有趣',
+                            src:'ossweb-img/t2/t11-1.png'
+                        },
+                        {
+                            name:'测试能力',
+                            src:'ossweb-img/t2/t11-2.png'
+                        },{
+                            name:'皮一下',
+                            src:'ossweb-img/t2/t11-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-5魂归之处中，为了去紫薇帝君陨落之处，天渊让主角换成什么服装？",
+                    sure:'C',
+                    res:[
+                        {
+                            name:'宴会装',
+                            src:'ossweb-img/t2/t12-1.png'
+                        },
+                        {
+                            name:'飞行装',
+                            src:'ossweb-img/t2/t12-2.png'
+                        },{
+                            name:'远行装',
+                            src:'ossweb-img/t2/t12-3.png'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            key:"天河",
+            ti:[
+                {
+                    bt:"在4-3交换情报中，“真言水”的本体是",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'天河水',
+                            src:'ossweb-img/t2/t13-1.png'
+                        },
+                        {
+                            name:'快乐水',
+                            src:'ossweb-img/t2/t13-2.png'
+                        },{
+                            name:'孟婆汤',
+                            src:'ossweb-img/t2/t13-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-5魂归之处中，紫薇帝君的陨落之处在哪里？",
+                    sure:'C',
+                    res:[
+                        {
+                            name:'西方天河',
+                            src:'ossweb-img/t2/t14-1.png'
+                        },
+                        {
+                            name:'东南天河',
+                            src:'ossweb-img/t2/t14-2.png'
+                        },{
+                            name:'北方天河',
+                            src:'ossweb-img/t2/t14-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-10初露端倪中，为什么主角可以通过天河？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'灵力不同',
+                            src:'ossweb-img/t2/t15-1.png'
+                        },
+                        {
+                            name:'种族不同',
+                            src:'ossweb-img/t2/t15-2.png'
+                        },{
+                            name:'性别不同',
+                            src:'ossweb-img/t2/t15-3.png'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            key:"秘技",
+            ti:[
+                {
+                    bt:"在4-2初次试探中，天渊让主角换装真正的理由是？",
+                    sure:'B',
+                    res:[
+                        {
+                            name:'烧钱有趣',
+                            src:'ossweb-img/t2/t16-1.png'
+                        },
+                        {
+                            name:'测试能力',
+                            src:'ossweb-img/t2/t16-2.png'
+                        },{
+                            name:'皮一下',
+                            src:'ossweb-img/t2/t16-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在九天星卷中，以下哪项技能不是的“祖传秘技”？",
+                    sure:'C',
+                    res:[
+                        {
+                            name:'补天之术',
+                            src:'ossweb-img/t2/t17-1.png'
+                        },
+                        {
+                            name:'换装之术',
+                            src:'ossweb-img/t2/t17-2.png'
+                        },{
+                            name:'翻书之术',
+                            src:'ossweb-img/t2/t17-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-2初次试探中，主角换装成了岁星星君后掌握了什么能力？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'寒冰之力',
+                            src:'ossweb-img/t2/t18-1.png'
+                        },
+                        {
+                            name:'烈焰之力',
+                            src:'ossweb-img/t2/t18-2.png'
+                        },{
+                            name:'金钱之力',
+                            src:'ossweb-img/t2/t18-3.png'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            key:"玉佩",
+            ti:[
+                {
+                    bt:"在4-10初露端倪中，天渊送了主角什么东西？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'玉佩',
+                            src:'ossweb-img/t2/t19-1.png'
+                        },
+                        {
+                            name:'折扇',
+                            src:'ossweb-img/t2/t19-2.png'
+                        },{
+                            name:'画轴',
+                            src:'ossweb-img/t2/t19-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-10初露端倪中，天渊送主角的东西具体的作用是？",
+                    sure:'C',
+                    res:[
+                        {
+                            name:'睹物思人',
+                            src:'ossweb-img/t2/t20-1.png'
+                        },
+                        {
+                            name:'卖掉换钱',
+                            src:'ossweb-img/t2/t20-2.png'
+                        },{
+                            name:'寻找半魂',
+                            src:'ossweb-img/t2/t20-3.png'
+                        }
+                    ]
+                },
+                {
+                    bt:"在4-10初露端倪中，是谁在主角走后过来跟天渊见面的？",
+                    sure:'A',
+                    res:[
+                        {
+                            name:'司命星君',
+                            src:'ossweb-img/t2/t21-1.png'
+                        },
+                        {
+                            name:'紫薇帝君',
+                            src:'ossweb-img/t2/t21-2.png'
+                        },{
+                            name:'半半',
+                            src:'ossweb-img/t2/t21-3.png'
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+    var t1=[
+        {
+        wa:'很遗憾今日闯关失败，掉进了湖里，但是在湖水里扑腾时你意外抓到了这份宝物',
+        src:'ossweb-img/gold.png',
+        jb:'1888金币'
+       },
+        {
+        wa:'今日未能闯关成功，大人不要灰心，收下这份奖励明日再来吧~',
+        src:'ossweb-img/gold.png',
+        jb:'2888金币'
+       },
+        {
+        wa:'今日闯关成功，小小心意以表鼓励~',
+        src:'ossweb-img/gold.png',
+        jb:'3888金币'
+       }
+    ]
+    var t2=[
+        {
+            wa:'今日修复裂隙失败，幸好被天渊抱住没有掉进裂缝中去，不过天渊还是偷偷拿给你了这份宝物~',
+            src:'ossweb-img/gold.png',
+            jb:'1888金币'
+        },
+        {
+            wa:'今日未能修复全部裂隙，大人不要灰心，收下这份奖励明日再来吧~',
+            src:'ossweb-img/gold.png',
+            jb:'2888金币'
+        },
+        {
+            wa:'今日成功修复全部裂隙，小小心意以表鼓励~',
+            src:'ossweb-img/gold.png',
+            jb:'3888金币'
+        }
+    ]
+    var _gapTime =new Date(json_curdate.replace(/-/g,"/"));
+    var _tady = new Date(2018,07,31,00,00,00);
+    console.log(+_tady)
+    console.log( +_gapTime)
+    var dayNum =_gapTime.getDay();         //记录天数
+    var sureResult = '';   //记录正确的答案
+    var selectResult = ''  //选择的答案
+    var selectIndex = 0;   //获得点击的答案index
+    var initIndex =0;     //关卡默认为0
+    var flag = true;     //答案是否可点击
+    var correctNum = 0;  //记录答对题的个数
+    var arr ='';
+    var arr1 = '';
+    if(_gapTime>_tady){
+        arr = q2;
+        arr1 = t2;
+        $("body").removeClass("day1").addClass("day2")
+    }else {
+       arr = q1;
+        arr1 = t1;
+        $("body").removeClass("day2").addClass("day1")
+    }
+    //*********题目切换**********
+    function showImg(num, index) {
+        sureResult = arr[num].ti[index].sure;
+        var imgHyml='<div class="keyword spr">\n' +
+            '关键词：<em>'+arr[num].key+'</em>\n' +
+            '</div>\n' +
+            '<p class="q"><span class="spr fl">第'+(index+1)+'关</span><strong class="fl">'+arr[num].ti[index].bt+'</strong></p>'+
+            '<ul class="list">' ;
+        for(var i=0; i<arr[num].ti[index].res.length; i++) {
+            imgHyml += '<li ontouchend="PTTSendClick(\'section3\',\'result\',\'答案\'\'\');">\n' +
+                ' <em class="spr">'+((i==0)?'A': (i == 1)?'B': 'C')+'</em>\n' +
+                '<div class="border"><img src="'+arr[num].ti[index].res[i].src+'" alt=""></div>\n' +
+                '<span>'+arr[num].ti[index].res[i].name+'</span>\n' +
+                '</li>'
+        }
+           imgHyml += '</ul>';
+        $('.insert').html(imgHyml)
+        initIndex++;
+        flag=true;
+    }
+    //*********弹窗奖励切换**********
+    function showPmg(index) {
+        var imgHtml='<p>'+arr1[index].wa+'</p>\n' +
+            '        <div class="award spr"><img src="'+arr1[index].src+'" alt=""></div>\n' +
+            '        <span>'+arr1[index].jb+'</span>';
+        $(".box").html(imgHtml);
+        $(".pop").animate({"width":"6.27rem"})
+    }
+
+    //*********确认选择**********
+    $('.verify').on('click', function () {
+        flag=false;
+        if(!$(".list li").hasClass("on")){
+            alert("请先选择上面的答案！")
+            flag=true;
+        }else{
+            if(selectResult == sureResult) {
+                correctNum++;
+                $('.list li').eq(selectIndex).find('img').attr('src', 'ossweb-img/correct.png')
+            }else {
+                $('.list li').eq(selectIndex).find('img').attr('src', 'ossweb-img/error.png')
+            }
+            console.log(selectResult,sureResult)
+            if(initIndex<3){
+                    $(".list").fadeOut(2000,setTimeout(function () {
+                        showImg(dayNum, initIndex)
+                    },1000))
+
+            }else {
+                setTimeout(function () {
+                    pageChange(2)
+                    changePop(correctNum)
+                    console.log(correctNum)
+                },800)
+
+            }
+
+        }
+
+    })
+    //    页面切换
+    function pageChange(index) {
+        $('.section').hide();
+        $('.section').eq(index).fadeIn();
+
+    }
+    //    根据答对题的个数切换奖品
+    function changePop(correctNum) {
+        switch (correctNum){
+            case 0:
+                showPmg(0)
+                break;
+            case 1:
+                showPmg(1)
+                break;
+            case 2:
+                showPmg(1)
+                break;
+            case 3:
+                showPmg(2)
+                break;
+        }
+    }
+    //    选择题目
+    $(".insert").on("click",".list li",function () {
+        var index = $(this).index();
+        if(index == 0) {
+            selectResult = 'A'
+        }else if(index == 1) {
+            selectResult = 'B'
+        }else if(index ==2) {
+            selectResult = 'C'
+        }
+        selectIndex = index;
+        if(flag==true){
+            $(this).addClass("on").siblings('li').removeClass("on")
+        }
+    })
+
+    //    点击领取奖励
+    $(".section3 .lq").on("click",function () {
+        $(this).addClass("on");
+        setTimeout(function () {
+            pageChange(0)
+            //初始化页面
+            window.location.reload()
+        },1000)
+    })
+
+
+    showImg(dayNum, initIndex)
+
+    console.log(new Date(json_curdate).getDay());
+
+</script>
+</body>
+</html>
