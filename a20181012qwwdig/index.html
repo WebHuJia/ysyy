@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="gbk">
+  <meta name="robots" content="all" />
+  <meta name="author" content="Tencent-CP">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="Copyright" content="Tencent" />
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="Description" content="欢乐麻将是腾讯倾力打造的一款经典国粹棋牌手游。时尚简约的中国风画面，真人实时对战玩法，陪伴你欢乐每一天" />
+  <meta name="Keywords" content="腾讯游戏,欢乐,麻将,QQ,棋牌,腾讯,游戏,网游,休闲" />
+  <title> 欢乐麻将-腾讯棋牌-腾讯游戏</title>
+  <!-- 页面设计：微聚科技 | 页面制作：微聚科技 | 创建：2018-10-12 -->
+  <script>
+    (function (win,doc){
+      if (!win.addEventListener) return;
+      var html=document.documentElement;
+      function setFont(cb) {
+        var w = html.clientWidth,
+          h = html.clientHeight;
+        // html.style.fontSize= w > h ? w/1462*100+"px" : w/750*100+"px";
+        html.style.fontSize= w/h>1200/760 ? h/750*100+"px" : h/950*100+"px";
+        if(cb&&typeof (cb)=="function"){cb()}
+      }
+      setFont();
+      doc.addEventListener('DOMContentLoaded',setFont,false);
+      win.addEventListener('resize',setFont,false);
+      win.addEventListener('load',setFont,false);
+    })(window,document);
+  </script>
+  <style>
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+    details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+    table{border-collapse:collapse;border-spacing:0}
+    audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+    fieldset,img{border:0}
+    address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+    ol,ul{list-style:none}
+    caption,th{text-align:left}
+    h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+    q:before,q:after{content:''}
+    abbr,acronym{border:0;font-variant:normal}
+    sup{vertical-align:text-top}
+    sub{vertical-align:text-bottom}
+    input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;outline: none;}
+    input,textarea,select{*font-size:100%}
+    a {text-decoration: none;outline: none;color: #fff;}
+    .fl{float: left;}
+    .fr{float: right;}
+    .q:after {content:""; display:block; height:0; clear:both; overflow:hidden;}
+    body{font-family:'\5FAE\8F6F\96C5\9ED1';color: #fff;  background: #173079;}
+    button{font-family:'\5FAE\8F6F\96C5\9ED1';}
+    .t_hide{text-indent: -2000rem;overflow: hidden;}
+    *{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}
+    i{font-style: normal;}
+    body{width: 100%;height: 100vh;background:url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/bg.jpg) no-repeat center/cover;overflow: hidden;}
+    /* content */
+    .content{overflow: hidden;}
+    .content .link{width: 12.3rem;margin: .3rem auto 0;position: relative;z-index: 2;}
+    .content .link a{display: block;text-indent: -9999rem;}
+    .content .link a.back{width:1.11rem;height: .7rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/back.png) no-repeat center/cover;}
+    .content .link a.rule{width:1.21rem;height: .73rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/gz.png) no-repeat center/cover;}
+    /* fixation */
+    .fixation{width: 11.95rem;height: 6.76rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/content.png) no-repeat center/cover;margin: -.7rem auto 0;box-sizing: border-box;padding: 1.8rem 1.9rem .4rem 2.4rem;font-size: .26rem;color: #2d240d;position: relative;z-index: 1;}
+    .fixation strong,.fixation em.num{font-size: .32rem;font-weight: bold;}
+    .fixation .topic{margin-top: .3rem;}
+    .option{width: 100%;margin-top: .4rem;}
+    .option li{width:3.22rem;height:.61rem;border: .02rem solid #ffb400;border-radius: .1rem;line-height: .61rem;box-sizing: border-box;padding: 0 0 0 .1rem ;display: flex;align-items: center;margin-bottom: .24rem}
+    .option li label:nth-child(3){flex: 1 1 auto;}
+    .option li:nth-child(1),.option li:nth-child(3){float: left;}
+    .option li:nth-child(2),.option li:nth-child(4){float: right;}
+    .option li input[type=radio]{display: none;}
+    .option li .ui-radio{display: inline-block;width: .25rem;height: .25rem;border-radius: 50%;border: .02rem solid #ffb400;margin-right: .1rem;}
+    .ui-radio::before{display: block;content: '';width: .15rem;height: .15rem;border-radius: 50%;background: #ff8400;margin: .05rem;visibility: hidden;}
+    .option li :checked+.ui-radio::before{visibility: visible;}
+    .fixation .qr{display: block;width:3.73rem;height: 1.26rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/qr.png) no-repeat center/cover;margin: .2rem auto;text-indent: -9999rem;position: relative;z-index: 2;} 
+    .fixation-2{display: none; padding-top: 1.4rem;}
+    .fixation-2 h4{text-align: center;font-size: .32rem;color: #2d240d;font-weight: bold;}
+    .fixation-2 h4 span{color: #ff0505;}
+    .fixation-2 h4 span em{font-weight: bold;}
+    .fixation-2 p{font-size: .26rem;color: #2d240d;text-align: center;}
+    .fixation-2 .umbrella{width:4.69rem;height: 4.04rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/umbrella.png) no-repeat center/cover;margin: 0 auto;position: absolute;top: 1.8rem;left: 50%;transform: translateX(-50%);z-index: 1;}
+    .fixation-2 img{display: block;width:2.68rem;height: 2.49rem;margin: 0 auto;}
+    /* 弹窗 */
+    .fix-dimg,.fix-dimg1{width: 100%;height: 100%;position: fixed;z-index: 99;top: 0;left: 0;background: rgba(0,0,0,.8);display: none;}
+    .fix-dimg .pop{position: fixed;left: 0;top: 0;right: 0;bottom: 0;margin: auto;z-index: 100;}
+    .fix-dimg .pop .close{position: absolute;width:.8rem;height: .8rem;top: -.4rem;right: -.4rem;text-indent: -9999rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/close.png) no-repeat center/cover;}
+    .fix-dimg .pop-1{width: 5.07rem;height: 2.08rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/pop.png) no-repeat center/cover;background-size: 100% 100%; box-sizing: border-box;padding: .63rem .8rem;}
+    .fix-dimg .pop-1::after{position: absolute; content: ''; width:1.63rem;height:1.73rem;right: -.8rem;bottom:-.3rem;background: url('//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/prs-1.png') no-repeat center/cover;}
+    .fix-dimg .pop-1 p{font-size:.34rem;color: #ff6c00;font-weight: bold;}
+    .fix-dimg .pop-2{width: 5.88rem;height: 3.29rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/pop.png) no-repeat center/cover;background-size: 100% 100%; box-sizing: border-box;padding: .54rem .83rem;}
+    .fix-dimg .pop-2::after{position: absolute; content: ''; width:2.43rem;height:2.4rem;right: -1rem;bottom:-.3rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/prs-2.png) no-repeat center/cover;}
+    .fix-dimg .pop-2 p{font-size:.34rem;color: #ff6c00;font-weight: bold;text-align:center;}
+    .fix-dimg .pop-2 .hao{display: block;width:2.18rem;height: .76rem;text-indent: -9999rem;margin: .55rem auto 0;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/bt_1.png) no-repeat center/cover;}
+    .fix-dimg .pop-3{width: 6.69rem;height: 3.7rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/pop.png) no-repeat center/cover;background-size: 100% 100%; box-sizing: border-box;padding: .54rem .7rem;}
+    .fix-dimg .pop-3 p{font-size:.34rem;color: #ff6c00;font-weight: bold;text-align:center;}
+    .fix-dimg .pop-3 span{display: block;widows: 100%; font-size: .24rem;color: #4c4334;margin-top: .35rem;}
+    .fix-dimg .pop-3::after{position: absolute; content: ''; width:1.43rem;height:1.89rem;right: -.7rem;bottom:-.3rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/prs-3.png) no-repeat center/cover;}
+    .fix-dimg .pop-3 .center{text-align:center;margin-top: .3rem;}
+    .fix-dimg .pop-3 .center .fhdt{display: inline-block;width:2.18rem;height: .76rem;text-indent: -9999rem;background: url('//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/bt_2.png') no-repeat center/cover}
+    .fix-dimg .pop-3 .center .tcdt{display: inline-block;width:2.18rem;height: .76rem;text-indent: -9999rem;background: url('//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/bt_3.png') no-repeat center/cover}
+    .fix-dimg1 .pop-4{position: fixed;z-index: 100;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.5);height:0;box-sizing: border-box;padding:0 2.04rem;transition: height .3s;}
+    .fix-dimg1 .pop-4 .close{position: absolute;width:.8rem;height: .8rem;top: -.4rem;right: 1.6rem;text-indent: -9999rem;background: url(//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/close.png) no-repeat center/cover;}
+    .fix-dimg1 .pop-4 strong{font-size:.34rem;color: #fff;font-weight: bold;}
+    .pop-4 .rule{font-size:.24rem;color: #fff;line-height: 1.5;}
+    .pop-4 .rule em{color: #fff000;}
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="link q">
+      <a ontouchend="PTTSendClick('btn','fh','返回')" href="javascript:;" class="back fl">返回</a>
+      <a ontouchend="PTTSendClick('btn','gz','规则')" href="javascript:;" class="rule fr">规则</a>
+    </div>
+    <div class="fixation fixation-1 fixation_1" >
+      <!-- <strong>今日题目（ <em class="num">1</em>/5）：</strong>
+      <p class="topic">血战玩法中，如果打出一张牌后，有两家都胡这张牌，那么？</p>
+      <ul class="option q">
+        <li>
+          <input type="radio" id="radio1" name="radio1" >
+          <label for="radio1" class="ui-radio"></label>
+          <label for="radio1" class="radio-txt">A、运气不错,买彩票去</label>
+        </li>
+        <li>
+          <input type="radio" id="radio2" name="radio1" >
+          <label for="radio2" class="ui-radio"></label>
+          <label for="radio2" class="radio-txt">B、买彩票去</label>
+        </li>
+        <li>
+          <input type="radio" id="radio3" name="radio1" >
+          <label for="radio3" class="ui-radio"></label>
+          <label for="radio3" class="radio-txt">C、运气不错,买彩票去</label>
+        </li>
+        <li>
+          <input type="radio" id="radio4" name="radio1" >
+          <label for="radio4" class="ui-radio"></label>
+          <label for="radio4" class="radio-txt">D、运气不错,买彩票去</label>
+        </li>
+      </ul>
+      <a class="qr" href="javascript:;">确认</a> -->
+    </div>
+    <div class="fixation fixation-2">
+      <h4>恭喜您一共答对了<span><em class="accum">5</em>道题</span></h4>
+      <p class="gain">获得了XXXXXXXXXXXXX</p>
+      <div class="umbrella"></div>
+      <img src="//game.gtimg.cn/images/majiang/ingame/cp/a20181012qwwdig/award-1.png" alt="">
+      <p class="desc">奖励发送至邮箱内，请注意查收！</p>
+      <a class="qr" href="happymjscheme://close" ontouchend="PTTSendClick('btn','qr','确认')">确认</a>
+    </div>
+  </div>
+  <!-- 弹窗 -->
+  <div class="fix-dimg">
+      <!-- 您还没有选择答案，请先选择一个答案~   -->
+      <div class="pop pop-1 po" >
+        <p>您还没有选择答案，请先选择一个答案~  </p>
+        <a href="javascript:showHid();" class="close" ontouchend="PTTSendClick('btn','gb','关闭')">关闭</a>
+      </div>
+      <div class="pop pop-2 po" >
+        <p>您今天已经参与过答题啦，明天再来试一试吧~</p>
+        <a href="javascript:showHid();" class="hao" ontouchend="PTTSendClick('btn','hd','好的')">好的</a>
+        <a href="javascript:showHid();" class="close" ontouchend="PTTSendClick('btn','gb','关闭')">关闭</a>
+      </div>
+      <div class="pop pop-3 po" >
+          <p>答题未完成，您确定要退出答题吗</p>
+          <span>退出答题会清除当前答题进度，再次进入答题需要重新作答~</span>
+          <div class="center">
+            <a href="javascript:showHid();" class="fhdt" ontouchend="PTTSendClick('btn','fhdt','返回答题')">返回答题</a>
+            <a href="happymjscheme://close" class="tcdt" ontouchend="PTTSendClick('btn','tcdt','退出答题')">退出答题</a>
+          </div>
+          <a href="javascript:showHid();" class="close" ontouchend="PTTSendClick('btn','gb','关闭')">关闭</a>
+        </div>
+  </div>
+      <!-- 规则弹窗     -->
+      <div class="fix-dimg1">
+        <div class="pop-4">
+          <strong>活动规则：</strong>
+          <ul class="rule">
+            <li class="q">
+              <span class="fl">1、</span>
+              <p class="fl">活动时间：<em>10月18日-10月25日</em>；</p>
+            </li>
+            <li class="q">
+              <span class="fl">2、</span>
+              <p class="fl">每名玩家每天只能参与一次答题，每次可以回答5道题，每道题只有一次回答机会；</p>
+            </li>
+            <li class="q">
+              <span class="fl">3、</span>
+              <p class="fl">玩家每答对一道题可以获得<em>100豆子</em>，若全部答对会额外获得<em>萌鸡报发3天</em>；</p>
+            </li>
+            <li class="q">
+              <span class="fl">4、</span>
+              <p class="fl" style="width:95%">如果玩家中途退出，则会清空当前已答题数量，再次进入答题会重置答题进度，刷新题目，玩家需要重新作答；</p>
+            </li>
+            <li class="q">
+              <span class="fl">5、</span>
+              <p class="fl">奖励将于答题结束后自动发放到游戏邮箱内；</p>
+            </li>
+          </ul>
+          <a href="javascript:;" class="close" ontouchend="PTTSendClick('btn','gb','关闭')">关闭</a>
+        </div>
+      </div>
+  <script src="js/rotate.js"></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript" src="https://img.ssl.msdk.qq.com/wiki/msdkJsAdapter.js"></script>
+  <script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+  <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+  <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+  <script>
+     _rotateObj.init('portrait');
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+      siteType:"a20181012qwwdig", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+      pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+      pageName:"首页", //必填项:页面中文名
+      project:"ingame", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+      osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+      ingame: 1, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+      stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    };
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+    TGMobileShare({
+      shareTitle:'欢乐麻将-腾讯棋牌-腾讯游戏', //不设置或设置为空时，页面有title，则调取title
+      shareDesc:'欢乐麻将是腾讯倾力打造的一款经典国粹棋牌手游。时尚简约的中国风画面，真人实时对战玩法，陪伴你欢乐每一天。', //不设置或设置为空时，页面有Description，则调取Description
+      shareImgUrl:'https://game.gtimg.cn/images/majiang/m/web201707/logo.png', //分享图片尺寸200*200，且填写绝对路径
+      actName:'a20181012qwwdig' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+
+    var sureResult = '';   //记录正确的答案
+    var selectResult = ''  //选择的答案
+    var selectIndex = 0;   //获得点击的答案index
+    var initIndex =0;     //关卡默认为0
+    var correctNum = 0;  //记录答对题的个数
+    var index = 0;        //获取随机题目
+    var randoms = [];     //随机数组
+
+    function showImg(index) {
+      // console.log('随机', index);
+      sureResult = q1[index].sure;
+      // console.log('下一题正确答案', sureResult);
+      var imgHyml='   <strong>今日题目（<em class="num">'+(initIndex+1)+'</em>/5）：</strong>\
+            <p class="topic">'+q1[index].bt+'</p>\
+            <ul class="option q">';
+            for(i=0; i<q1[index].res.length; i++) {
+              imgHyml+='<li>\
+              <input type="radio" id="radio'+(i+1)+'" name="radio1" >\
+              <label for="radio'+(i+1)+'" class="ui-radio"></label>\
+              <label for="radio'+(i+1)+'" class="radio-txt">'+q1[index].res[i].name+'</label>\
+            </li>';  
+            }  
+          imgHyml+="</ul>";
+          imgHyml+=' <a class="qr" href="javascript:;" >确认</a>';
+          $('.fixation_1').html(imgHyml)
+          initIndex++;
+    }
+
+    //*********确认选择**********
+    $(".fixation-1").on("click",".qr" ,function() {
+      var id = -1;
+      $('input').each(function (i) {
+        if($('input').eq(i)[0].checked) {
+         id = i
+        }
+      })
+      if(id !== -1) {
+        if(id==0){
+          selectResult = 'A' 
+        }else if(id==1) {
+          selectResult = 'B' 
+        }else if(id==2) {
+          selectResult = 'C' 
+        }else if(id==3) {
+          selectResult = 'D' 
+        }
+        if(sureResult==selectResult){correctNum++}
+        // console.log("选择答案"+selectResult,"正确答案"+sureResult)
+        // console.log('答对题的数量'+correctNum)
+        if(initIndex<5){
+          index++;
+          // console.log(randoms[index])
+          showImg(randoms[index]);
+          }else {
+              setTimeout(function () {
+                  pageChange(1)
+                  changePop(correctNum)
+                  $('.accum').text(correctNum)
+              },200)
+          }
+      }else {
+        showDia('.pop-1');
+      }
+      selectIndex = id;
+    })
+
+    //    页面切换
+    function pageChange(index) {
+      $('.fixation').hide();
+      $('.fixation').eq(index).fadeIn();
+    }
+
+    //    根据答对题的个数切换奖品
+    function changePop(correctNum) {
+      switch (correctNum){
+          case 0:
+              $(".gain").text('答对0道，很遗憾没有奖励噢，再接再厉吧！');
+              $('.desc').css("visibility",'hidden');
+              break;
+          case 1:
+              $(".gain").text('获得了100豆子');
+              break;
+          case 2:
+              $(".gain").text('获得了200豆子');
+              break;
+          case 3:
+              $(".gain").text('获得了300豆子');
+              break;
+          case 4:
+              $(".gain").text('获得了400豆子');
+          break;
+          case 5:
+              $(".gain").text('获得了500豆子和萌鸡报发3天');
+          break;
+      }
+  }   
+//给定范围内,产生多个不重复的随机整数
+//num: 随机数个数，min：随机数的最小值，max:随机数的最大值，返回值：多个随机数组成的数组
+function createRandom(num ,min ,max)
+{
+    var arr=[],res=[];
+    for (var i=min;i<=max;i++) {
+        arr.push(i);
+    }
+    for(var item=0;item<num;item++) {
+        res.push(arr.splice(Math.floor(Math.random() * arr.length), 1)[0]);
+    }
+    return res;
+}
+var random1=createRandom(2,0,19)
+var random2=createRandom(3,20,49)
+randoms=random1.concat(random2)
+randoms.splice(0,2,50,33)
+console.log(randoms)
+
+ //*********题库调用**********
+  showImg(randoms[index]);
+
+  //    弹窗
+  function showDia(val) {
+      $(".fix-dimg").show();
+      $(val).fadeIn().siblings(".po").hide();
+  }
+  function showHid() {
+      $(".fix-dimg").hide();
+      $('.po').hide();
+  }
+  // 返回
+  $('.back ').on("click",function() {
+    showDia('.pop-3')
+  });
+  // 规则
+  $('.rule').on("click",function() {
+    $('.fix-dimg1').show()
+    $('.pop-4').css('height','4.77rem')
+  });
+  $('.fix-dimg1 .close').on("click",function() {
+    $('.pop-4').css('height','0')
+    setTimeout(function(){
+      $(".fix-dimg1").hide()
+    } ,280)
+  })
+</script>
+</body>
+</html>
